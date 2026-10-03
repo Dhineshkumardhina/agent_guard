@@ -32,7 +32,7 @@ from ml.simulation.agents import (
 
 def run_demo():
     print("=" * 70)
-    print(" AgentGuard — Multi-Agent Simulation Demo (Phase 2)")
+    print(" AgentGuard -- Multi-Agent Simulation Demo (Phase 2)")
     print("=" * 70)
 
     # 1. Initialize database tables
