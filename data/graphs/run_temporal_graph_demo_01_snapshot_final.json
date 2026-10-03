@@ -1,0 +1,174 @@
+{
+  "timestamp": 0.8444,
+  "run_id": "run_temporal_graph_demo_01",
+  "step_idx": 3,
+  "num_nodes": 5,
+  "num_edges": 4,
+  "nodes": {
+    "analyst_1": {
+      "agent_id": "analyst_1",
+      "role": "analyst",
+      "is_active": true,
+      "event_count": 2,
+      "message_count": 0,
+      "tool_call_count": 0,
+      "error_count": 0,
+      "retry_count": 0,
+      "timeout_count": 0,
+      "average_latency": 0.352,
+      "average_confidence": 0.5502,
+      "average_output_quality": 0.47,
+      "contradiction_rate": 0.0,
+      "recent_failure_count": 0
+    },
+    "decision_1": {
+      "agent_id": "decision_1",
+      "role": "decision",
+      "is_active": true,
+      "event_count": 1,
+      "message_count": 0,
+      "tool_call_count": 0,
+      "error_count": 0,
+      "retry_count": 0,
+      "timeout_count": 0,
+      "average_latency": 0.0,
+      "average_confidence": 1.0,
+      "average_output_quality": 1.0,
+      "contradiction_rate": 0.0,
+      "recent_failure_count": 0
+    },
+    "planner_1": {
+      "agent_id": "planner_1",
+      "role": "planner",
+      "is_active": true,
+      "event_count": 1,
+      "message_count": 0,
+      "tool_call_count": 0,
+      "error_count": 0,
+      "retry_count": 0,
+      "timeout_count": 0,
+      "average_latency": 0.2599,
+      "average_confidence": 0.9023,
+      "average_output_quality": 0.95,
+      "contradiction_rate": 0.0,
+      "recent_failure_count": 0
+    },
+    "researcher_1": {
+      "agent_id": "researcher_1",
+      "role": "researcher",
+      "is_active": true,
+      "event_count": 2,
+      "message_count": 0,
+      "tool_call_count": 1,
+      "error_count": 1,
+      "retry_count": 0,
+      "timeout_count": 0,
+      "average_latency": 0.2325,
+      "average_confidence": 0.9023,
+      "average_output_quality": 0.1,
+      "contradiction_rate": 0.0,
+      "recent_failure_count": 1
+    },
+    "verifier_1": {
+      "agent_id": "verifier_1",
+      "role": "verifier",
+      "is_active": true,
+      "event_count": 2,
+      "message_count": 0,
+      "tool_call_count": 0,
+      "error_count": 0,
+      "retry_count": 0,
+      "timeout_count": 0,
+      "average_latency": 0.1844,
+      "average_confidence": 0.5709,
+      "average_output_quality": 0.49,
+      "contradiction_rate": 0.0,
+      "recent_failure_count": 0
+    }
+  },
+  "edges": {
+    "analyst_1->verifier_1": {
+      "source_agent": "analyst_1",
+      "target_agent": "verifier_1",
+      "interaction_count": 1,
+      "message_count": 0,
+      "average_latency": 0.352,
+      "average_message_length": 145.0,
+      "average_confidence": 0.5502,
+      "retry_count": 0,
+      "contradiction_rate": 0.0,
+      "error_count": 0,
+      "timeout_count": 0,
+      "last_interaction_time": 0.4924,
+      "interaction_frequency": 1.1843,
+      "interaction_timestamps": [
+        0.4924
+      ]
+    },
+    "planner_1->researcher_1": {
+      "source_agent": "planner_1",
+      "target_agent": "researcher_1",
+      "interaction_count": 1,
+      "message_count": 0,
+      "average_latency": 0.2599,
+      "average_message_length": 296.0,
+      "average_confidence": 0.9023,
+      "retry_count": 0,
+      "contradiction_rate": 0.0,
+      "error_count": 0,
+      "timeout_count": 0,
+      "last_interaction_time": 0.0,
+      "interaction_frequency": 1.1843,
+      "interaction_timestamps": [
+        0.0
+      ]
+    },
+    "researcher_1->analyst_1": {
+      "source_agent": "researcher_1",
+      "target_agent": "analyst_1",
+      "interaction_count": 1,
+      "message_count": 0,
+      "average_latency": 0.2325,
+      "average_message_length": 431.0,
+      "average_confidence": 0.9023,
+      "retry_count": 0,
+      "contradiction_rate": 0.0,
+      "error_count": 1,
+      "timeout_count": 0,
+      "last_interaction_time": 0.2599,
+      "interaction_frequency": 1.1843,
+      "interaction_timestamps": [
+        0.2599
+      ]
+    },
+    "verifier_1->decision_1": {
+      "source_agent": "verifier_1",
+      "target_agent": "decision_1",
+      "interaction_count": 1,
+      "message_count": 0,
+      "average_latency": 0.1844,
+      "average_message_length": 131.0,
+      "average_confidence": 0.5709,
+      "retry_count": 0,
+      "contradiction_rate": 0.0,
+      "error_count": 0,
+      "timeout_count": 0,
+      "last_interaction_time": 0.8444,
+      "interaction_frequency": 1.1843,
+      "interaction_timestamps": [
+        0.8444
+      ]
+    }
+  },
+  "metadata": {
+    "window_strategy": "cumulative",
+    "window_size": null,
+    "time_window": null,
+    "events_in_window": 4,
+    "targets": {
+      "failure_k_1": 0,
+      "failure_k_3": 0,
+      "failure_k_5": 0
+    }
+  }
+}

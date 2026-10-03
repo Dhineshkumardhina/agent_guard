@@ -138,6 +138,14 @@ All feature computation strictly obeys the **no-future-leakage** constraint:
 - Graph snapshots are built incrementally, never retroactively.
 - A programmatic leakage checker (`verify_no_future_leakage`) is enforced during feature extraction.
 
+### 3.1 Temporal Graph Module Architecture (`ml/graph/`)
+- `GraphSnapshot`: Discrete attributed interaction graph $G(t) = (V(t), E(t), X(t))$ with NetworkX and PyG tensor readiness.
+- `extract_node_features`: Computes 14 causal node features per agent (latencies, confidences, errors, timeouts, retries).
+- `extract_edge_features`: Computes 14 causal edge features per directed channel (frequency, length, latency, contradictions).
+- `TemporalGraphBuilder`: Generates snapshots, historical sequences $\mathcal{H}(t) = [G(t-n), \dots, G(t)]$, and attaches prediction targets $K \in \{1, 3, 5, 10, 20\}$.
+- `serializers`: Lossless JSON persistence and disk reloading for experiments.
+- `visualization`: Text/ASCII and optional matplotlib topological rendering.
+
 ---
 
 ## 4. Database Schema Relationships
