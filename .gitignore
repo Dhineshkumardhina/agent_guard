@@ -1,0 +1,102 @@
+# ─── Python ──────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ─── Testing & Coverage ───────────────────────────────────────
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+
+# ─── Virtual Environments ────────────────────────────────────
+.venv/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# ─── Secrets & Environment Files (NEVER commit) ──────────────
+.env
+.env.local
+.env.production
+.env.*.local
+*.pem
+*.key
+
+# ─── Data & Datasets (large binaries — use DVC or external storage) ──
+datasets/raw/*.jsonl
+datasets/raw/*.csv
+datasets/raw/*.parquet
+datasets/processed/*.pt
+datasets/processed/*.parquet
+datasets/processed/*.npz
+datasets/synthetic/*.jsonl
+
+# ─── Model Checkpoints ───────────────────────────────────────
+*.pt
+*.pth
+*.ckpt
+*.pkl
+*.joblib
+results/checkpoints/
+results/models/
+
+# ─── Database Files ──────────────────────────────────────────
+*.sqlite3
+*.db
+
+# ─── Logs ────────────────────────────────────────────────────
+logs/
+*.log
+
+# ─── Frontend ────────────────────────────────────────────────
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.next/
+frontend/out/
+
+# ─── IDE & OS ────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ─── Jupyter ────────────────────────────────────────────────
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# ─── Build & Packaging ───────────────────────────────────────
+*.tar.gz
+*.zip
+
+# ─── ML Experiment Tracking ──────────────────────────────────
+mlruns/
+.mlflow/
+wandb/
+lightning_logs/

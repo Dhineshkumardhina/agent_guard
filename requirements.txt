@@ -1,0 +1,32 @@
+# AgentGuard — Root Requirements (Phase 1 Foundation)
+# Install with: pip install -r requirements.txt
+# NOTE: PyTorch, PyTorch Geometric, and CUDA-specific packages
+#       are intentionally excluded from Phase 1. They will be
+#       added in Phase 8 (Static GNN) and Phase 9 (Temporal GNN).
+
+# ─── Web Framework ────────────────────────────────────────────
+fastapi>=0.115.0
+uvicorn>=0.34.0
+httpx>=0.28.0            # Test client and async HTTP
+
+# ─── Data Validation ─────────────────────────────────────────
+pydantic>=2.10.0
+pydantic-settings>=2.7.0
+
+# ─── Database ────────────────────────────────────────────────
+sqlalchemy>=2.0.36
+# psycopg2-binary>=2.9.9   # Uncomment for PostgreSQL support
+
+# ─── Configuration ───────────────────────────────────────────
+python-dotenv>=1.0.0
+pyyaml>=6.0.2
+
+# ─── Scientific Computing ────────────────────────────────────
+numpy>=1.26.0
+pandas>=2.2.0
+scikit-learn>=1.4.0
+networkx>=3.2.0
+
+# ─── Testing ────────────────────────────────────────────────
+pytest>=8.0.0
+pytest-cov>=4.1.0

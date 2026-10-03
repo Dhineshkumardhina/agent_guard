@@ -1,0 +1,48 @@
+# Default Research Experiment Configuration for AgentGuard
+experiment_id: exp_default_baseline_comparison
+name: AgentGuard Baseline vs Temporal Graph Failure Prediction
+description: >
+  Investigation into whether temporal interaction graphs improve early warning
+  detection of cascading failures in multi-agent systems over agent-level features.
+
+simulation:
+  num_runs: 500
+  num_agents: 5
+  topology: pipeline
+  task_type: research
+  fault_injection_rate: 0.35
+  active_fault_types:
+    - hallucinated_output
+    - incorrect_information
+    - tool_failure
+    - tool_timeout
+    - contradictory_information
+    - communication_loop
+  max_steps_per_run: 30
+  random_seed: 42
+
+data_split:
+  train_ratio: 0.70
+  val_ratio: 0.15
+  test_ratio: 0.15
+  split_strategy: trajectory_level
+
+prediction_horizons:
+  - 1
+  - 3
+  - 5
+  - 10
+  - 20
+
+models_to_evaluate:
+  - rule_based
+  - logistic_regression
+  - random_forest
+  - xgboost
+  - lstm
+  - static_gnn
+  - temporal_gnn
+
+metadata:
+  protocol_version: "1.0"
+  research_target: "Level 3 Cascading Failures"
