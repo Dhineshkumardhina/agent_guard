@@ -118,13 +118,22 @@ class SimulationEnvironment(EnvironmentInterface):
                 run_id=run_id,
             )
 
-        # Apply fault injection hook if active (Phase 3 extension point)
+        # Apply fault injection hook if active
         if self._fault_injector and self._fault_injector.should_inject(step_idx, msg.to_telemetry_event()):
             mutated = self._fault_injector.apply_fault(msg.to_telemetry_event())
+            msg.message = mutated.message
+            msg.output_quality = mutated.output_quality
+            msg.confidence = mutated.confidence
+            msg.latency = mutated.latency
+            msg.contradiction_score = mutated.contradiction_score
+            msg.retry_count = mutated.retry_count
+            msg.tool_used = mutated.tool_used
+            msg.tool_success = mutated.tool_success
+            msg.tool_error = mutated.tool_error
             msg.injected_fault = mutated.injected_fault
             msg.error_type = mutated.error_type
             msg.failure_label = mutated.failure_label
-            msg.tool_error = mutated.tool_error
+            msg.event_type = mutated.event_type
 
         # Advance simulated time deterministically by message latency
         self._sim_time += max(0.05, getattr(msg, "latency", 0.1))
