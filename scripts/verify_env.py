@@ -10,6 +10,12 @@ Usage:
 
 import sys
 import importlib
+from pathlib import Path
+
+# Ensure project root is on path when running the script directly
+_PROJECT_ROOT = Path(__file__).resolve().parent.parent
+if str(_PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(_PROJECT_ROOT))
 
 REQUIRED_PACKAGES = [
     ("fastapi", "fastapi"),
@@ -36,11 +42,11 @@ def check_import(module: str, pkg_name: str, required: bool = True) -> bool:
     try:
         mod = importlib.import_module(module)
         version = getattr(mod, "__version__", "?")
-        status = "✓" if required else "○"
+        status = "[OK]" if required else "[ok]"
         print(f"  {status}  {pkg_name:<28} {version}")
         return True
     except ImportError:
-        status = "✗" if required else "–"
+        status = "[!!]" if required else "[--]"
         note = "(required)" if required else "(optional, not installed)"
         print(f"  {status}  {pkg_name:<28} NOT FOUND {note}")
         return False
@@ -64,11 +70,11 @@ def main() -> int:
 
     print()
     if required_ok:
-        print("✓ All required packages are available.")
-        print("✓ Environment is ready for Phase 1.")
+        print("[OK] All required packages are available.")
+        print("[OK] Environment is ready for Phase 1.")
     else:
-        print("✗ Some required packages are missing.")
-        print("  Run: pip install -r requirements.txt")
+        print("[!!] Some required packages are missing.")
+        print("     Run: pip install -r requirements.txt")
         return 1
 
     # Run provenance capture
