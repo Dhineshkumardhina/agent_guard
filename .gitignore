@@ -61,7 +61,7 @@ datasets/synthetic/*.jsonl
 *.ckpt
 *.pkl
 *.joblib
-results/checkpoints/
+results/checkpoints/ 
 results/models/
 
 # ─── Database Files ──────────────────────────────────────────
