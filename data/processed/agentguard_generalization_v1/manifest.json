@@ -1,0 +1,129 @@
+{
+  "dataset_version": "agentguard_generalization_v1",
+  "creation_timestamp": "2026-10-04T02:14:58.006802+00:00",
+  "simulator_version": "0.6.0",
+  "configuration": {
+    "num_runs": 72,
+    "random_seed": 42,
+    "fault_probability": 0.7,
+    "train_ratio": 0.7,
+    "val_ratio": 0.15,
+    "test_ratio": 0.15
+  },
+  "random_seed": 42,
+  "number_of_runs": 72,
+  "number_of_samples": 1098,
+  "prediction_horizons": [
+    1,
+    3,
+    5,
+    10,
+    20
+  ],
+  "topologies": [
+    "pipeline",
+    "star",
+    "mesh",
+    "custom"
+  ],
+  "tasks": [
+    "research",
+    "coding",
+    "analysis",
+    "planning"
+  ],
+  "agent_counts": [
+    3,
+    5,
+    8,
+    12
+  ],
+  "class_distribution": {
+    "total_samples": 1098,
+    "positive_samples": 769,
+    "negative_samples": 329,
+    "positive_class_ratio": 0.7004,
+    "failure_levels": {
+      "0": 329,
+      "1": 11,
+      "2": 17,
+      "3": 741
+    },
+    "failure_types": {
+      "none": 1007,
+      "incorrect_information": 6,
+      "delayed_response": 23,
+      "incorrect_delegation": 16,
+      "contradictory_output": 6,
+      "communication_loop": 4,
+      "tool_failure": 8,
+      "tool_timeout": 7,
+      "low_confidence_output": 6,
+      "hallucinated_output": 5,
+      "malformed_output": 3,
+      "agent_dropout": 7
+    },
+    "topologies": {
+      "pipeline": 18,
+      "star": 270,
+      "mesh": 216,
+      "custom": 594
+    },
+    "tasks": {
+      "research": 18,
+      "coding": 270,
+      "analysis": 216,
+      "planning": 594
+    },
+    "horizons": {
+      "1": 468,
+      "3": 342,
+      "5": 234,
+      "10": 54
+    },
+    "runs_per_split": {
+      "train": 50,
+      "val": 11,
+      "test": 11,
+      "unassigned": 0
+    }
+  },
+  "split_distribution": {
+    "train_runs": 50,
+    "val_runs": 11,
+    "test_runs": 11,
+    "train_samples": 746,
+    "val_samples": 138,
+    "test_samples": 214
+  },
+  "feature_schema": {
+    "agent_level_features": [
+      "total_events_observed",
+      "mean_output_quality",
+      "min_output_quality",
+      "mean_confidence",
+      "min_confidence",
+      "total_token_count",
+      "total_latency",
+      "mean_latency",
+      "max_latency",
+      "total_retries",
+      "mean_contradiction_score",
+      "max_contradiction_score",
+      "tool_call_count",
+      "tool_failure_count",
+      "agent_count_active",
+      "error_count",
+      "interaction_density"
+    ],
+    "prediction_horizons": [
+      1,
+      3,
+      5,
+      10,
+      20
+    ]
+  },
+  "storage_format": "parquet",
+  "description": "Controlled experimental multi-agent dataset for cascading failure prediction"
+}

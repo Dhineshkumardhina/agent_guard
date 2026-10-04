@@ -1,0 +1,208 @@
+{
+  "explanation_id": "exp_low_risk_success_run_0001_agentguard_generalization_v1_s0",
+  "case_type": "low_risk_success",
+  "sample_id": "run_0001_agentguard_generalization_v1_s0_k1",
+  "run_id": "run_0001_agentguard_generalization_v1",
+  "topology": "star",
+  "task_type": "coding",
+  "prediction_timestamp": 0.0,
+  "actual_failure_timestamp": null,
+  "prediction_horizon": 1,
+  "predicted_probability": 0.5963,
+  "predicted_label": 1,
+  "true_label": 1,
+  "threshold": 0.1,
+  "model_name": "TemporalGraphFailurePredictor",
+  "model_version": "1.0.0",
+  "dataset_version": "agentguard_generalization_v1",
+  "seed": 42,
+  "important_agents": [
+    {
+      "agent_id": "agent_0",
+      "agent_role": "agent",
+      "attribution_score": 0.298,
+      "delta_risk": 0.0,
+      "signed_contribution": 0.0,
+      "event_count": 0,
+      "message_count": 0,
+      "contradiction_rate": 0.0,
+      "retry_count": 0,
+      "rank": 1
+    },
+    {
+      "agent_id": "agent_1",
+      "agent_role": "agent",
+      "attribution_score": 0.298,
+      "delta_risk": 0.0,
+      "signed_contribution": 0.0,
+      "event_count": 0,
+      "message_count": 0,
+      "contradiction_rate": 0.0,
+      "retry_count": 0,
+      "rank": 2
+    },
+    {
+      "agent_id": "agent_2",
+      "agent_role": "agent",
+      "attribution_score": 0.298,
+      "delta_risk": 0.0,
+      "signed_contribution": 0.0,
+      "event_count": 0,
+      "message_count": 0,
+      "contradiction_rate": 0.0,
+      "retry_count": 0,
+      "rank": 3
+    },
+    {
+      "agent_id": "agent_3",
+      "agent_role": "agent",
+      "attribution_score": 0.298,
+      "delta_risk": 0.0,
+      "signed_contribution": 0.0,
+      "event_count": 0,
+      "message_count": 0,
+      "contradiction_rate": 0.0,
+      "retry_count": 0,
+      "rank": 4
+    },
+    {
+      "agent_id": "agent_4",
+      "agent_role": "agent",
+      "attribution_score": 0.298,
+      "delta_risk": 0.0,
+      "signed_contribution": 0.0,
+      "event_count": 0,
+      "message_count": 0,
+      "contradiction_rate": 0.0,
+      "retry_count": 0,
+      "rank": 5
+    }
+  ],
+  "important_interactions": [],
+  "important_features": [
+    {
+      "feature_name": "average_output_quality",
+      "feature_group": "node",
+      "importance_score": 0.1192,
+      "signed_contribution": 0.0,
+      "baseline_value": 0.0,
+      "perturbed_value": null,
+      "rank": 1
+    },
+    {
+      "feature_name": "event_count",
+      "feature_group": "node",
+      "importance_score": 0.0,
+      "signed_contribution": 0.0,
+      "baseline_value": 0.0,
+      "perturbed_value": null,
+      "rank": 2
+    },
+    {
+      "feature_name": "message_count",
+      "feature_group": "node",
+      "importance_score": 0.0,
+      "signed_contribution": 0.0,
+      "baseline_value": 0.0,
+      "perturbed_value": null,
+      "rank": 3
+    },
+    {
+      "feature_name": "tool_call_count",
+      "feature_group": "node",
+      "importance_score": 0.0,
+      "signed_contribution": 0.0,
+      "baseline_value": 0.0,
+      "perturbed_value": null,
+      "rank": 4
+    },
+    {
+      "feature_name": "error_count",
+      "feature_group": "node",
+      "importance_score": 0.0,
+      "signed_contribution": 0.0,
+      "baseline_value": 0.0,
+      "perturbed_value": null,
+      "rank": 5
+    },
+    {
+      "feature_name": "retry_count",
+      "feature_group": "node",
+      "importance_score": 0.0,
+      "signed_contribution": 0.0,
+      "baseline_value": 0.0,
+      "perturbed_value": null,
+      "rank": 6
+    },
+    {
+      "feature_name": "timeout_count",
+      "feature_group": "node",
+      "importance_score": 0.0,
+      "signed_contribution": 0.0,
+      "baseline_value": 0.0,
+      "perturbed_value": null,
+      "rank": 7
+    },
+    {
+      "feature_name": "average_latency",
+      "feature_group": "node",
+      "importance_score": 0.0,
+      "signed_contribution": 0.0,
+      "baseline_value": 0.0,
+      "perturbed_value": null,
+      "rank": 8
+    }
+  ],
+  "important_events": [],
+  "positive_contributions": [
+    "No strong positive failure indicators detected."
+  ],
+  "negative_contributions": [
+    "No active risk-mitigating signals observed."
+  ],
+  "perturbation_results": [
+    {
+      "perturbation_type": "reduce_contradiction_50pct",
+      "target_entity": "contradiction_rate",
+      "original_probability": 0.5963,
+      "perturbed_probability": 0.5963,
+      "delta_probability": 0.0,
+      "percent_change": 0.0,
+      "direction": "neutral",
+      "description": "Reduced node contradiction_rate by 50% across all active agents."
+    },
+    {
+      "perturbation_type": "reduce_retry_frequency_50pct",
+      "target_entity": "retry_count",
+      "original_probability": 0.5963,
+      "perturbed_probability": 0.5963,
+      "delta_probability": 0.0,
+      "percent_change": 0.0,
+      "direction": "neutral",
+      "description": "Reduced agent retry_count by 50% across all active agents."
+    },
+    {
+      "perturbation_type": "modify_confidence_plus20",
+      "target_entity": "average_confidence",
+      "original_probability": 0.5963,
+      "perturbed_probability": 0.5963,
+      "delta_probability": 0.0,
+      "percent_change": 0.0,
+      "direction": "neutral",
+      "description": "Boosted agent average_confidence by +20% across all active agents."
+    },
+    {
+      "perturbation_type": "remove_top_agent",
+      "target_entity": "agent_0",
+      "original_probability": 0.5963,
+      "perturbed_probability": 0.5963,
+      "delta_probability": -0.0,
+      "percent_change": -0.0,
+      "direction": "neutral",
+      "description": "Masked telemetry and memory states for primary agent 'agent_0'."
+    }
+  ],
+  "high_level_summary": "Case Low Risk Success evaluation for run run_0001_agentguard_generalization_v1 at t=0.00s.",
+  "causality_disclaimer": "NOTICE: These explanations reflect model-internal associations, gradient attributions, and counterfactual sensitivity measurements. They do NOT establish empirical or physical causality between observed features and multi-agent system failures.",
+  "created_at": "2026-10-04T02:48:30.460058+00:00"
+}

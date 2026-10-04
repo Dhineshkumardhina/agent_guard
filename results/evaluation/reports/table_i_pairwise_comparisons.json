@@ -1,0 +1,74 @@
+[
+  {
+    "Comparison": "XGBoost vs LSTM",
+    "Horizon": 1,
+    "Metric": "F1",
+    "Model A F1": 1.0,
+    "Model B F1": 0.96,
+    "Difference": 0.04,
+    "95% CI Lower": 0.0,
+    "95% CI Upper": 1.0,
+    "p-value": 0.632,
+    "Significant (p<0.05)": false
+  },
+  {
+    "Comparison": "XGBoost vs GCN",
+    "Horizon": 1,
+    "Metric": "F1",
+    "Model A F1": 1.0,
+    "Model B F1": 1.0,
+    "Difference": 0.0,
+    "95% CI Lower": 0.0,
+    "95% CI Upper": 0.0,
+    "p-value": 1.0,
+    "Significant (p<0.05)": false
+  },
+  {
+    "Comparison": "GCN vs GAT",
+    "Horizon": 1,
+    "Metric": "F1",
+    "Model A F1": 1.0,
+    "Model B F1": 1.0,
+    "Difference": 0.0,
+    "95% CI Lower": 0.0,
+    "95% CI Upper": 0.0,
+    "p-value": 1.0,
+    "Significant (p<0.05)": false
+  },
+  {
+    "Comparison": "GCN vs Temporal GNN",
+    "Horizon": 1,
+    "Metric": "F1",
+    "Model A F1": 1.0,
+    "Model B F1": 0.7,
+    "Difference": 0.3,
+    "95% CI Lower": 0.0,
+    "95% CI Upper": 1.0,
+    "p-value": 0.08,
+    "Significant (p<0.05)": false
+  },
+  {
+    "Comparison": "GAT vs Temporal GNN",
+    "Horizon": 1,
+    "Metric": "F1",
+    "Model A F1": 1.0,
+    "Model B F1": 0.7,
+    "Difference": 0.3,
+    "95% CI Lower": 0.0,
+    "95% CI Upper": 1.0,
+    "p-value": 0.08,
+    "Significant (p<0.05)": false
+  },
+  {
+    "Comparison": "LSTM vs Temporal GNN",
+    "Horizon": 1,
+    "Metric": "F1",
+    "Model A F1": 0.96,
+    "Model B F1": 0.7,
+    "Difference": 0.26,
+    "95% CI Lower": 0.0,
+    "95% CI Upper": 0.2632,
+    "p-value": 0.656,
+    "Significant (p<0.05)": false
+  }
+]

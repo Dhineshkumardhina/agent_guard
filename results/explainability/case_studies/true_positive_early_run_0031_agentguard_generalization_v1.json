@@ -1,0 +1,179 @@
+{
+  "explanation_id": "exp_true_positive_early_run_0031_agentguard_generalization_v1_s0",
+  "case_type": "true_positive_early",
+  "sample_id": "run_0031_agentguard_generalization_v1_s0_k1",
+  "run_id": "run_0031_agentguard_generalization_v1",
+  "topology": "custom",
+  "task_type": "planning",
+  "prediction_timestamp": 0.0,
+  "actual_failure_timestamp": null,
+  "prediction_horizon": 1,
+  "predicted_probability": 0.8423,
+  "predicted_label": 1,
+  "true_label": 1,
+  "threshold": 0.1,
+  "model_name": "TemporalGraphFailurePredictor",
+  "model_version": "1.0.0",
+  "dataset_version": "agentguard_generalization_v1",
+  "seed": 42,
+  "important_agents": [
+    {
+      "agent_id": "planner_1",
+      "agent_role": "planner",
+      "attribution_score": 1.0,
+      "delta_risk": 0.2563,
+      "signed_contribution": 0.2563,
+      "event_count": 0,
+      "message_count": 0,
+      "contradiction_rate": 0.9535,
+      "retry_count": 0,
+      "rank": 1
+    },
+    {
+      "agent_id": "researcher_1",
+      "agent_role": "researcher",
+      "attribution_score": 0.0002,
+      "delta_risk": 0.0001,
+      "signed_contribution": 0.0001,
+      "event_count": 0,
+      "message_count": 0,
+      "contradiction_rate": 0.0,
+      "retry_count": 0,
+      "rank": 2
+    }
+  ],
+  "important_interactions": [],
+  "important_features": [
+    {
+      "feature_name": "contradiction_rate",
+      "feature_group": "node",
+      "importance_score": 1.0,
+      "signed_contribution": 0.1855,
+      "baseline_value": 0.0,
+      "perturbed_value": null,
+      "rank": 1
+    },
+    {
+      "feature_name": "error_count",
+      "feature_group": "node",
+      "importance_score": 0.6282,
+      "signed_contribution": 0.1166,
+      "baseline_value": 0.0,
+      "perturbed_value": null,
+      "rank": 2
+    },
+    {
+      "feature_name": "recent_failure_count",
+      "feature_group": "node",
+      "importance_score": 0.6273,
+      "signed_contribution": 0.1164,
+      "baseline_value": 0.0,
+      "perturbed_value": null,
+      "rank": 3
+    },
+    {
+      "feature_name": "average_confidence",
+      "feature_group": "node",
+      "importance_score": 0.271,
+      "signed_contribution": -0.0503,
+      "baseline_value": 0.0,
+      "perturbed_value": null,
+      "rank": 4
+    },
+    {
+      "feature_name": "outgoing_interactions",
+      "feature_group": "node",
+      "importance_score": 0.1876,
+      "signed_contribution": -0.0348,
+      "baseline_value": 0.0,
+      "perturbed_value": null,
+      "rank": 5
+    },
+    {
+      "feature_name": "average_latency",
+      "feature_group": "node",
+      "importance_score": 0.1771,
+      "signed_contribution": 0.0329,
+      "baseline_value": 0.0,
+      "perturbed_value": null,
+      "rank": 6
+    },
+    {
+      "feature_name": "event_count",
+      "feature_group": "node",
+      "importance_score": 0.1327,
+      "signed_contribution": -0.0246,
+      "baseline_value": 0.0,
+      "perturbed_value": null,
+      "rank": 7
+    },
+    {
+      "feature_name": "is_active",
+      "feature_group": "node",
+      "importance_score": 0.081,
+      "signed_contribution": -0.015,
+      "baseline_value": 0.0,
+      "perturbed_value": null,
+      "rank": 8
+    }
+  ],
+  "important_events": [],
+  "positive_contributions": [
+    "Elevated Contradiction Rate (impact: +0.185)",
+    "Elevated Error Count (impact: +0.117)",
+    "Elevated Recent Failure Count (impact: +0.116)",
+    "Elevated Average Latency (impact: +0.033)",
+    "Anomalous telemetry from Planner (planner_1) (+0.256)"
+  ],
+  "negative_contributions": [
+    "Stable Average Confidence (mitigation: -0.050)",
+    "Stable Outgoing Interactions (mitigation: -0.035)",
+    "Stable Event Count (mitigation: -0.025)",
+    "Stable Is Active (mitigation: -0.015)"
+  ],
+  "perturbation_results": [
+    {
+      "perturbation_type": "reduce_contradiction_50pct",
+      "target_entity": "contradiction_rate",
+      "original_probability": 0.8423,
+      "perturbed_probability": 0.7617,
+      "delta_probability": -0.0806,
+      "percent_change": -9.57,
+      "direction": "risk_decreased",
+      "description": "Reduced node contradiction_rate by 50% across all active agents."
+    },
+    {
+      "perturbation_type": "reduce_retry_frequency_50pct",
+      "target_entity": "retry_count",
+      "original_probability": 0.8423,
+      "perturbed_probability": 0.8423,
+      "delta_probability": 0.0,
+      "percent_change": 0.0,
+      "direction": "neutral",
+      "description": "Reduced agent retry_count by 50% across all active agents."
+    },
+    {
+      "perturbation_type": "modify_confidence_plus20",
+      "target_entity": "average_confidence",
+      "original_probability": 0.8423,
+      "perturbed_probability": 0.8301,
+      "delta_probability": -0.0122,
+      "percent_change": -1.44,
+      "direction": "risk_decreased",
+      "description": "Boosted agent average_confidence by +20% across all active agents."
+    },
+    {
+      "perturbation_type": "remove_top_agent",
+      "target_entity": "planner_1",
+      "original_probability": 0.8423,
+      "perturbed_probability": 0.586,
+      "delta_probability": -0.2563,
+      "percent_change": -30.43,
+      "direction": "risk_decreased",
+      "description": "Masked telemetry and memory states for primary agent 'planner_1'."
+    }
+  ],
+  "high_level_summary": "Case True Positive Early evaluation for run run_0031_agentguard_generalization_v1 at t=0.00s.",
+  "causality_disclaimer": "NOTICE: These explanations reflect model-internal associations, gradient attributions, and counterfactual sensitivity measurements. They do NOT establish empirical or physical causality between observed features and multi-agent system failures.",
+  "created_at": "2026-10-04T02:50:13.508528+00:00"
+}

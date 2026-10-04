@@ -1,0 +1,56 @@
+{
+  "experiment_id": "temporal_gnn_k10_20261003_190957",
+  "model_name": "temporal_gnn",
+  "prediction_horizon": 10,
+  "selected_threshold": 0.5,
+  "metrics": {
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "auroc": 0.5,
+    "auprc": 1.0,
+    "false_positive_rate": 0.0,
+    "false_alarm_rate": 0.0,
+    "confusion_matrix": {
+      "tp": 0,
+      "fp": 0,
+      "tn": 0,
+      "fn": 3,
+      "total": 3
+    },
+    "threshold_used": 0.5
+  },
+  "lead_time": {
+    "mean_lead_time": 0.0,
+    "median_lead_time": 0.0,
+    "min_lead_time": 0.0,
+    "max_lead_time": 0.0,
+    "successful_early_warnings": 0,
+    "total_failed_trajectories": 1,
+    "early_warning_detection_rate": 0.0,
+    "total_warnings_emitted": 0,
+    "warnings_per_trajectory": 0.0,
+    "lead_times_sample": []
+  },
+  "training": {
+    "epochs_trained": 6,
+    "best_epoch": 1,
+    "best_val_loss": 0.30140139659245807
+  },
+  "metadata": {
+    "experiment_id": "temporal_gnn_k10_20261003_190957",
+    "dataset_version": "agentguard_dataset_v1",
+    "feature_version": "v1_temporal_gnn_14node_10edge",
+    "prediction_horizon": 10,
+    "model_name": "temporal_gnn",
+    "memory_dim": 64,
+    "time_dim": 16,
+    "embed_dim": 64,
+    "neighbor_history": 10,
+    "dropout": 0.2,
+    "pos_weight": 0.5,
+    "train_trajectories": 3,
+    "val_trajectories": 1,
+    "test_trajectories": 1
+  }
+}

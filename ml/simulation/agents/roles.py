@@ -407,3 +407,55 @@ def create_agent(
         memory=memory,
         configuration=configuration,
     )
+
+
+def create_agent_roster(num_agents: int = 5) -> List[Agent]:
+    """Create a standardized roster of agents for a simulation run.
+    
+    Supports canonical configurations: 3, 5, 8, 12, or arbitrary counts.
+    
+    Args:
+        num_agents: Number of agents in the roster (e.g. 3, 5, 8, 12).
+        
+    Returns:
+        List of initialized Agent instances with unique IDs and roles.
+    """
+    if num_agents < 2:
+        raise ValueError(f"Agent roster requires at least 2 agents, requested {num_agents}")
+
+    role_cycle = [
+        ("planner", "Planner Alpha"),
+        ("researcher", "Researcher Beta"),
+        ("analyst", "Analyst Gamma"),
+        ("verifier", "Verifier Delta"),
+        ("decision", "Decision Epsilon"),
+        ("coder", "Coder Zeta"),
+        ("critic", "Critic Eta"),
+    ]
+
+    if num_agents == 3:
+        return [
+            Planner(agent_id="planner_1", name="Planner Alpha"),
+            Researcher(agent_id="researcher_1", name="Researcher Beta"),
+            DecisionAgent(agent_id="decision_1", name="Decision Gamma"),
+        ]
+    elif num_agents == 5:
+        return [
+            Planner(agent_id="planner_1", name="Planner Alpha"),
+            Researcher(agent_id="researcher_1", name="Researcher Beta"),
+            Analyst(agent_id="analyst_1", name="Analyst Gamma"),
+            Verifier(agent_id="verifier_1", name="Verifier Delta"),
+            DecisionAgent(agent_id="decision_1", name="Decision Epsilon"),
+        ]
+
+    # For 8, 12, or arbitrary counts, generate deterministic roster
+    agents: List[Agent] = []
+    for i in range(num_agents):
+        role_key, base_name = role_cycle[i % len(role_cycle)]
+        idx = (i // len(role_cycle)) + 1
+        agent_id = f"{role_key}_{idx}" if idx > 1 else f"{role_key}_1"
+        agent_name = f"{base_name} {idx}" if idx > 1 else base_name
+        agents.append(create_agent(role=role_key, agent_id=agent_id, name=agent_name))
+
+    return agents
+

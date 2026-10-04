@@ -1,0 +1,552 @@
+{
+  "explanation_id": "exp_low_risk_success_run_0003_agentguard_generalization_v1_s11",
+  "case_type": "low_risk_success",
+  "sample_id": "run_0003_agentguard_generalization_v1_s11_k1",
+  "run_id": "run_0003_agentguard_generalization_v1",
+  "topology": "custom",
+  "task_type": "planning",
+  "prediction_timestamp": 2.2867,
+  "actual_failure_timestamp": null,
+  "prediction_horizon": 1,
+  "predicted_probability": 0.586,
+  "predicted_label": 1,
+  "true_label": 1,
+  "threshold": 0.1,
+  "model_name": "TemporalGraphFailurePredictor",
+  "model_version": "1.0.0",
+  "dataset_version": "agentguard_generalization_v1",
+  "seed": 42,
+  "important_agents": [
+    {
+      "agent_id": "analyst_1",
+      "agent_role": "analyst",
+      "attribution_score": 0.0,
+      "delta_risk": 0.0,
+      "signed_contribution": 0.0,
+      "event_count": 10,
+      "message_count": 10,
+      "contradiction_rate": 0.0,
+      "retry_count": 0,
+      "rank": 1
+    },
+    {
+      "agent_id": "analyst_2",
+      "agent_role": "analyst",
+      "attribution_score": 0.0,
+      "delta_risk": 0.0,
+      "signed_contribution": 0.0,
+      "event_count": 5,
+      "message_count": 5,
+      "contradiction_rate": 0.0,
+      "retry_count": 0,
+      "rank": 2
+    },
+    {
+      "agent_id": "coder_1",
+      "agent_role": "coder",
+      "attribution_score": 0.0,
+      "delta_risk": 0.0,
+      "signed_contribution": 0.0,
+      "event_count": 10,
+      "message_count": 10,
+      "contradiction_rate": 0.0,
+      "retry_count": 0,
+      "rank": 3
+    },
+    {
+      "agent_id": "critic_1",
+      "agent_role": "critic",
+      "attribution_score": 0.0,
+      "delta_risk": 0.0,
+      "signed_contribution": 0.0,
+      "event_count": 15,
+      "message_count": 15,
+      "contradiction_rate": 0.0,
+      "retry_count": 0,
+      "rank": 4
+    },
+    {
+      "agent_id": "decision_1",
+      "agent_role": "decision",
+      "attribution_score": 0.0,
+      "delta_risk": 0.0,
+      "signed_contribution": 0.0,
+      "event_count": 10,
+      "message_count": 10,
+      "contradiction_rate": 0.0,
+      "retry_count": 0,
+      "rank": 5
+    },
+    {
+      "agent_id": "decision_2",
+      "agent_role": "decision",
+      "attribution_score": 0.0,
+      "delta_risk": 0.0,
+      "signed_contribution": 0.0,
+      "event_count": 1,
+      "message_count": 1,
+      "contradiction_rate": 0.0,
+      "retry_count": 0,
+      "rank": 6
+    },
+    {
+      "agent_id": "planner_1",
+      "agent_role": "planner",
+      "attribution_score": 0.0,
+      "delta_risk": 0.0,
+      "signed_contribution": 0.0,
+      "event_count": 10,
+      "message_count": 10,
+      "contradiction_rate": 0.0,
+      "retry_count": 0,
+      "rank": 7
+    },
+    {
+      "agent_id": "planner_2",
+      "agent_role": "planner",
+      "attribution_score": 0.0,
+      "delta_risk": 0.0,
+      "signed_contribution": 0.0,
+      "event_count": 9,
+      "message_count": 9,
+      "contradiction_rate": 0.0,
+      "retry_count": 0,
+      "rank": 8
+    },
+    {
+      "agent_id": "researcher_1",
+      "agent_role": "researcher",
+      "attribution_score": 0.0,
+      "delta_risk": 0.0,
+      "signed_contribution": 0.0,
+      "event_count": 10,
+      "message_count": 10,
+      "contradiction_rate": 0.0,
+      "retry_count": 0,
+      "rank": 9
+    },
+    {
+      "agent_id": "researcher_2",
+      "agent_role": "researcher",
+      "attribution_score": 0.0,
+      "delta_risk": 0.0,
+      "signed_contribution": 0.0,
+      "event_count": 7,
+      "message_count": 7,
+      "contradiction_rate": 0.0,
+      "retry_count": 0,
+      "rank": 10
+    },
+    {
+      "agent_id": "verifier_1",
+      "agent_role": "verifier",
+      "attribution_score": 0.0,
+      "delta_risk": 0.0,
+      "signed_contribution": 0.0,
+      "event_count": 10,
+      "message_count": 10,
+      "contradiction_rate": 0.0,
+      "retry_count": 0,
+      "rank": 11
+    },
+    {
+      "agent_id": "verifier_2",
+      "agent_role": "verifier",
+      "attribution_score": 0.0,
+      "delta_risk": 0.0,
+      "signed_contribution": 0.0,
+      "event_count": 3,
+      "message_count": 3,
+      "contradiction_rate": 0.0,
+      "retry_count": 0,
+      "rank": 12
+    }
+  ],
+  "important_interactions": [
+    {
+      "source_agent": "analyst_1",
+      "target_agent": "verifier_1",
+      "attribution_score": 1.0,
+      "delta_risk": 0.0008,
+      "interaction_count": 5,
+      "average_latency": 0.2783,
+      "contradiction_rate": 0.0,
+      "retry_count": 0,
+      "signed_contribution": 0.0008,
+      "rank": 1
+    },
+    {
+      "source_agent": "coder_1",
+      "target_agent": "critic_1",
+      "attribution_score": 1.0,
+      "delta_risk": 0.0008,
+      "interaction_count": 5,
+      "average_latency": 0.2268,
+      "contradiction_rate": 0.0,
+      "retry_count": 0,
+      "signed_contribution": 0.0008,
+      "rank": 2
+    },
+    {
+      "source_agent": "critic_1",
+      "target_agent": "planner_2",
+      "attribution_score": 1.0,
+      "delta_risk": 0.0008,
+      "interaction_count": 5,
+      "average_latency": 0.1301,
+      "contradiction_rate": 0.0,
+      "retry_count": 0,
+      "signed_contribution": 0.0008,
+      "rank": 3
+    },
+    {
+      "source_agent": "decision_1",
+      "target_agent": "coder_1",
+      "attribution_score": 1.0,
+      "delta_risk": 0.0008,
+      "interaction_count": 5,
+      "average_latency": 0.174,
+      "contradiction_rate": 0.0,
+      "retry_count": 0,
+      "signed_contribution": 0.0008,
+      "rank": 4
+    },
+    {
+      "source_agent": "planner_1",
+      "target_agent": "critic_1",
+      "attribution_score": 1.0,
+      "delta_risk": 0.0008,
+      "interaction_count": 5,
+      "average_latency": 0.1042,
+      "contradiction_rate": 0.0,
+      "retry_count": 0,
+      "signed_contribution": 0.0008,
+      "rank": 5
+    },
+    {
+      "source_agent": "planner_1",
+      "target_agent": "researcher_1",
+      "attribution_score": 1.0,
+      "delta_risk": 0.0008,
+      "interaction_count": 5,
+      "average_latency": 0.1461,
+      "contradiction_rate": 0.0,
+      "retry_count": 0,
+      "signed_contribution": 0.0008,
+      "rank": 6
+    }
+  ],
+  "important_features": [
+    {
+      "feature_name": "average_message_length",
+      "feature_group": "edge",
+      "importance_score": 1.0,
+      "signed_contribution": 0.0029,
+      "baseline_value": 0.0,
+      "perturbed_value": null,
+      "rank": 1
+    },
+    {
+      "feature_name": "event_count",
+      "feature_group": "node",
+      "importance_score": 0.0,
+      "signed_contribution": 0.0,
+      "baseline_value": 0.0,
+      "perturbed_value": null,
+      "rank": 2
+    },
+    {
+      "feature_name": "message_count",
+      "feature_group": "node",
+      "importance_score": 0.0,
+      "signed_contribution": 0.0,
+      "baseline_value": 0.0,
+      "perturbed_value": null,
+      "rank": 3
+    },
+    {
+      "feature_name": "tool_call_count",
+      "feature_group": "node",
+      "importance_score": 0.0,
+      "signed_contribution": 0.0,
+      "baseline_value": 0.0,
+      "perturbed_value": null,
+      "rank": 4
+    },
+    {
+      "feature_name": "error_count",
+      "feature_group": "node",
+      "importance_score": 0.0,
+      "signed_contribution": 0.0,
+      "baseline_value": 0.0,
+      "perturbed_value": null,
+      "rank": 5
+    },
+    {
+      "feature_name": "retry_count",
+      "feature_group": "node",
+      "importance_score": 0.0,
+      "signed_contribution": 0.0,
+      "baseline_value": 0.0,
+      "perturbed_value": null,
+      "rank": 6
+    },
+    {
+      "feature_name": "timeout_count",
+      "feature_group": "node",
+      "importance_score": 0.0,
+      "signed_contribution": 0.0,
+      "baseline_value": 0.0,
+      "perturbed_value": null,
+      "rank": 7
+    },
+    {
+      "feature_name": "average_latency",
+      "feature_group": "node",
+      "importance_score": 0.0,
+      "signed_contribution": 0.0,
+      "baseline_value": 0.0,
+      "perturbed_value": null,
+      "rank": 8
+    }
+  ],
+  "important_events": [
+    {
+      "event_id": "run_0003_agentguard_generalization_v1_step_0",
+      "timestamp": 1.4406,
+      "time_before_prediction": 0.8461,
+      "event_type": "message",
+      "source_agent": "analyst_1",
+      "target_agent": "verifier_1",
+      "importance_score": 0.0,
+      "signed_contribution": 0.0,
+      "details": {
+        "step_idx": 0,
+        "features": [
+          1.0,
+          0.0,
+          0.278,
+          145.0,
+          0.566,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.694
+        ]
+      },
+      "rank": 1
+    },
+    {
+      "event_id": "run_0003_agentguard_generalization_v1_step_0",
+      "timestamp": 1.4406,
+      "time_before_prediction": 0.8461,
+      "event_type": "message",
+      "source_agent": "coder_1",
+      "target_agent": "critic_1",
+      "importance_score": 0.0,
+      "signed_contribution": 0.0,
+      "details": {
+        "step_idx": 0,
+        "features": [
+          1.0,
+          0.0,
+          0.227,
+          147.0,
+          0.555,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.694
+        ]
+      },
+      "rank": 2
+    },
+    {
+      "event_id": "run_0003_agentguard_generalization_v1_step_0",
+      "timestamp": 1.4406,
+      "time_before_prediction": 0.8461,
+      "event_type": "message",
+      "source_agent": "critic_1",
+      "target_agent": "planner_2",
+      "importance_score": 0.0,
+      "signed_contribution": 0.0,
+      "details": {
+        "step_idx": 0,
+        "features": [
+          1.0,
+          0.0,
+          0.13,
+          194.0,
+          0.543,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.694
+        ]
+      },
+      "rank": 3
+    },
+    {
+      "event_id": "run_0003_agentguard_generalization_v1_step_0",
+      "timestamp": 1.4406,
+      "time_before_prediction": 0.8461,
+      "event_type": "message",
+      "source_agent": "decision_1",
+      "target_agent": "coder_1",
+      "importance_score": 0.0,
+      "signed_contribution": 0.0,
+      "details": {
+        "step_idx": 0,
+        "features": [
+          1.0,
+          0.0,
+          0.174,
+          117.0,
+          0.576,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.694
+        ]
+      },
+      "rank": 4
+    },
+    {
+      "event_id": "run_0003_agentguard_generalization_v1_step_0",
+      "timestamp": 1.4406,
+      "time_before_prediction": 0.8461,
+      "event_type": "message",
+      "source_agent": "planner_1",
+      "target_agent": "critic_1",
+      "importance_score": 0.0,
+      "signed_contribution": 0.0,
+      "details": {
+        "step_idx": 0,
+        "features": [
+          1.0,
+          0.0,
+          0.104,
+          240.0,
+          0.588,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.694
+        ]
+      },
+      "rank": 5
+    },
+    {
+      "event_id": "run_0003_agentguard_generalization_v1_step_0",
+      "timestamp": 1.4406,
+      "time_before_prediction": 0.8461,
+      "event_type": "error",
+      "source_agent": "planner_1",
+      "target_agent": "researcher_1",
+      "importance_score": 0.0,
+      "signed_contribution": 0.0,
+      "details": {
+        "step_idx": 0,
+        "features": [
+          1.0,
+          0.0,
+          0.146,
+          307.0,
+          0.128,
+          0.0,
+          0.0,
+          1.0,
+          0.0,
+          0.694
+        ]
+      },
+      "rank": 6
+    }
+  ],
+  "positive_contributions": [
+    "No strong positive failure indicators detected."
+  ],
+  "negative_contributions": [
+    "No active risk-mitigating signals observed."
+  ],
+  "perturbation_results": [
+    {
+      "perturbation_type": "reduce_contradiction_50pct",
+      "target_entity": "contradiction_rate",
+      "original_probability": 0.586,
+      "perturbed_probability": 0.586,
+      "delta_probability": 0.0,
+      "percent_change": 0.0,
+      "direction": "neutral",
+      "description": "Reduced node contradiction_rate by 50% across all active agents."
+    },
+    {
+      "perturbation_type": "reduce_retry_frequency_50pct",
+      "target_entity": "retry_count",
+      "original_probability": 0.586,
+      "perturbed_probability": 0.586,
+      "delta_probability": 0.0,
+      "percent_change": 0.0,
+      "direction": "neutral",
+      "description": "Reduced agent retry_count by 50% across all active agents."
+    },
+    {
+      "perturbation_type": "modify_confidence_plus20",
+      "target_entity": "average_confidence",
+      "original_probability": 0.586,
+      "perturbed_probability": 0.586,
+      "delta_probability": 0.0,
+      "percent_change": 0.0,
+      "direction": "neutral",
+      "description": "Boosted agent average_confidence by +20% across all active agents."
+    },
+    {
+      "perturbation_type": "remove_one_interaction",
+      "target_entity": "step_4",
+      "original_probability": 0.586,
+      "perturbed_probability": 0.586,
+      "delta_probability": 0.0,
+      "percent_change": 0.0,
+      "direction": "neutral",
+      "description": "Removed the single most recent interaction event immediately prior to prediction time."
+    },
+    {
+      "perturbation_type": "mask_recent_events",
+      "target_entity": "recent_2s_window",
+      "original_probability": 0.586,
+      "perturbed_probability": 0.5852,
+      "delta_probability": -0.0008,
+      "percent_change": -0.13,
+      "direction": "neutral",
+      "description": "Masked 5 interaction events occurring within 2.0s prior to prediction."
+    },
+    {
+      "perturbation_type": "remove_top_agent",
+      "target_entity": "analyst_1",
+      "original_probability": 0.586,
+      "perturbed_probability": 0.586,
+      "delta_probability": 0.0,
+      "percent_change": 0.0,
+      "direction": "neutral",
+      "description": "Masked telemetry and memory states for primary agent 'analyst_1'."
+    },
+    {
+      "perturbation_type": "remove_top_edge",
+      "target_entity": "analyst_1->verifier_1",
+      "original_probability": 0.586,
+      "perturbed_probability": 0.5852,
+      "delta_probability": -0.0008,
+      "percent_change": -0.13,
+      "direction": "neutral",
+      "description": "Masked all communications along directed channel 'analyst_1 -> verifier_1'."
+    }
+  ],
+  "high_level_summary": "Case Low Risk Success evaluation for run run_0003_agentguard_generalization_v1 at t=2.29s.",
+  "causality_disclaimer": "NOTICE: These explanations reflect model-internal associations, gradient attributions, and counterfactual sensitivity measurements. They do NOT establish empirical or physical causality between observed features and multi-agent system failures.",
+  "created_at": "2026-10-04T02:50:26.646973+00:00"
+}

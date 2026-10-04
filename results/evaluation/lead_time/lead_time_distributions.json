@@ -1,0 +1,11 @@
+{
+  "Rule-Based": [],
+  "Logistic Regression": [],
+  "Random Forest": [],
+  "XGBoost": [],
+  "LSTM": [],
+  "GRU": [],
+  "GCN": [],
+  "GAT": [],
+  "Temporal GNN": []
+}

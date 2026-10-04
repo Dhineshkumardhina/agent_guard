@@ -1,0 +1,83 @@
+[
+  {
+    "Model": "Rule-Based",
+    "Primary Seed": 42,
+    "F1": 0.2667,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Lead Time": 0.0,
+    "Note": "Benchmark primary seed; multi-seed variance to be ablated in Phase 13"
+  },
+  {
+    "Model": "Logistic Regression",
+    "Primary Seed": 42,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Lead Time": 0.0,
+    "Note": "Benchmark primary seed; multi-seed variance to be ablated in Phase 13"
+  },
+  {
+    "Model": "Random Forest",
+    "Primary Seed": 42,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Lead Time": 0.0,
+    "Note": "Benchmark primary seed; multi-seed variance to be ablated in Phase 13"
+  },
+  {
+    "Model": "XGBoost",
+    "Primary Seed": 42,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Lead Time": 0.0,
+    "Note": "Benchmark primary seed; multi-seed variance to be ablated in Phase 13"
+  },
+  {
+    "Model": "LSTM",
+    "Primary Seed": 42,
+    "F1": 0.96,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Lead Time": 0.0,
+    "Note": "Benchmark primary seed; multi-seed variance to be ablated in Phase 13"
+  },
+  {
+    "Model": "GRU",
+    "Primary Seed": 42,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Lead Time": 0.0,
+    "Note": "Benchmark primary seed; multi-seed variance to be ablated in Phase 13"
+  },
+  {
+    "Model": "GCN",
+    "Primary Seed": 42,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Lead Time": 0.0,
+    "Note": "Benchmark primary seed; multi-seed variance to be ablated in Phase 13"
+  },
+  {
+    "Model": "GAT",
+    "Primary Seed": 42,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Lead Time": 0.0,
+    "Note": "Benchmark primary seed; multi-seed variance to be ablated in Phase 13"
+  },
+  {
+    "Model": "Temporal GNN",
+    "Primary Seed": 42,
+    "F1": 0.7,
+    "AUROC": 0.9231,
+    "AUPRC": 0.9945,
+    "Lead Time": 0.0,
+    "Note": "Benchmark primary seed; multi-seed variance to be ablated in Phase 13"
+  }
+]

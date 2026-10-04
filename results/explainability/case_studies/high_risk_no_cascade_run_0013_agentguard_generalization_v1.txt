@@ -1,0 +1,37 @@
+================================================================================
+EXPLANATION REPORT: HIGH RISK NO CASCADE
+Sample ID: run_0013_agentguard_generalization_v1_s6_k1 | Run: run_0013_agentguard_generalization_v1 | Horizon K=1
+--------------------------------------------------------------------------------
+Model: TemporalGraphFailurePredictor (v1.0.0) | Seed: 42
+Predicted Risk: 0.5860 (Threshold: 0.10 -> Class: 1)
+Ground Truth: Class 0 (Failure Time: None)
+
+High-Risk Contributing Factors (+):
+  - No strong positive failure indicators detected.
+
+Risk-Mitigating Factors (-):
+  - No active risk-mitigating signals observed.
+
+Key Contributing Agents:
+  - Analyst (analyst_1): score=0.000
+  - Decision (decision_1): score=0.000
+  - Planner (planner_1): score=0.000
+
+Key Interaction Paths:
+  - planner_1 -> analyst_1: score=0.000
+  - planner_1 -> researcher_1: score=0.000
+  - researcher_1 -> planner_1: score=0.000
+
+Key Salient Features:
+  - average_message_length (edge): score=1.000
+  - event_count (node): score=0.000
+  - message_count (node): score=0.000
+  - tool_call_count (node): score=0.000
+
+Relevant Recent Chronological Events (t <= 1.40s):
+  - t=0.47s [message] planner_1->analyst_1 (impact=0.000)
+  - t=0.47s [message] planner_1->researcher_1 (impact=0.000)
+  - t=0.47s [message] researcher_1->planner_1 (impact=0.000)
+
+NOTICE: These explanations reflect model-internal associations, gradient attributions, and counterfactual sensitivity measurements. They do NOT establish empirical or physical causality between observed features and multi-agent system failures.
+================================================================================

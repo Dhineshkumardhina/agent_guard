@@ -1,0 +1,30 @@
+{
+  "model_name": "rule_based_early_warning",
+  "version": "1.0.0",
+  "description": "Transparent weighted indicator early warning baseline",
+  "weights": {
+    "w_error_rate": 0.25,
+    "w_retry_rate": 0.15,
+    "w_timeout_rate": 0.15,
+    "w_contradiction_rate": 0.15,
+    "w_confidence_degradation": 0.15,
+    "w_latency_anomaly": 0.05,
+    "w_frequency_anomaly": 0.05,
+    "w_interaction_concentration": 0.05
+  },
+  "thresholds": {
+    "threshold_low": 0.2,
+    "threshold_medium": 0.35,
+    "threshold_high": 0.6,
+    "decision_threshold": 0.35
+  },
+  "active_rules": null,
+  "prediction_horizons": [
+    1,
+    3,
+    5,
+    10,
+    20
+  ],
+  "metadata": {}
+}

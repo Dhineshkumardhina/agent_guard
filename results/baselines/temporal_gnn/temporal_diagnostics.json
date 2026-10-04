@@ -1,0 +1,19 @@
+{
+  "number_of_runs": 14,
+  "total_interaction_events": 357,
+  "unique_agents_count": 12,
+  "average_interactions_per_run": 25.5,
+  "temporal_gap_distribution": {
+    "mean_delta_t": 0.0336,
+    "median_delta_t": 0.0,
+    "min_delta_t": 0.0,
+    "max_delta_t": 0.4277
+  },
+  "average_memory_updates_per_run": 51.0,
+  "total_prediction_points": 224,
+  "class_distribution": {
+    "positive_samples": 84,
+    "negative_samples": 140,
+    "positive_ratio": 0.375
+  }
+}

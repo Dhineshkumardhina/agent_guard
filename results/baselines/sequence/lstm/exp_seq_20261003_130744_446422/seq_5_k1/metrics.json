@@ -1,0 +1,41 @@
+{
+  "experiment_id": "exp_seq_20261003_130744_446422",
+  "model_name": "lstm",
+  "sequence_length": 5,
+  "horizon": 1,
+  "dataset_version": "agentguard_dataset_v1",
+  "selected_threshold": 0.5,
+  "training_summary": {
+    "best_epoch": 7,
+    "best_val_loss": 0.1904722899198532
+  },
+  "metrics": {
+    "precision": 1.0,
+    "recall": 0.8462,
+    "f1": 0.9167,
+    "auroc": 1.0,
+    "auprc": 1.0,
+    "false_positive_rate": 0.0,
+    "false_alarm_rate": 0.0,
+    "confusion_matrix": {
+      "tp": 11,
+      "fp": 0,
+      "tn": 1,
+      "fn": 2,
+      "total": 14
+    },
+    "threshold_used": 0.5
+  },
+  "lead_time": {
+    "mean_lead_time": 0.0,
+    "median_lead_time": 0.0,
+    "min_lead_time": 0.0,
+    "max_lead_time": 0.0,
+    "successful_early_warnings": 0,
+    "total_failed_trajectories": 2,
+    "early_warning_detection_rate": 0.0,
+    "total_warnings_emitted": 11,
+    "warnings_per_trajectory": 3.67,
+    "lead_times_sample": []
+  }
+}

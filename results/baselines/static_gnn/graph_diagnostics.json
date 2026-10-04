@@ -1,0 +1,19 @@
+{
+  "num_graphs": 224,
+  "avg_nodes_per_graph": 4.4464,
+  "avg_edges_per_graph": 4.0536,
+  "avg_graph_density": 0.3718,
+  "total_isolated_nodes": 0,
+  "avg_node_degree": 1.8233,
+  "topology_distribution": {
+    "star": 75,
+    "pipeline": 2,
+    "mesh": 48,
+    "custom": 99
+  },
+  "class_distribution": {
+    "positive_count": 84,
+    "negative_count": 140,
+    "positive_ratio": 0.375
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "experiment_id": "exp_seq_20261003_130744_446422",
+  "model_name": "gru",
+  "sequence_length": 10,
+  "horizon": 1,
+  "dataset_version": "agentguard_dataset_v1",
+  "selected_threshold": 0.5,
+  "training_summary": {
+    "best_epoch": 9,
+    "best_val_loss": 0.17980778962373734
+  },
+  "metrics": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "auroc": 1.0,
+    "auprc": 1.0,
+    "false_positive_rate": 0.0,
+    "false_alarm_rate": 0.0,
+    "confusion_matrix": {
+      "tp": 13,
+      "fp": 0,
+      "tn": 1,
+      "fn": 0,
+      "total": 14
+    },
+    "threshold_used": 0.5
+  },
+  "lead_time": {
+    "mean_lead_time": 0.0,
+    "median_lead_time": 0.0,
+    "min_lead_time": 0.0,
+    "max_lead_time": 0.0,
+    "successful_early_warnings": 2,
+    "total_failed_trajectories": 2,
+    "early_warning_detection_rate": 1.0,
+    "total_warnings_emitted": 13,
+    "warnings_per_trajectory": 4.33,
+    "lead_times_sample": [
+      0.0,
+      0.0
+    ]
+  }
+}

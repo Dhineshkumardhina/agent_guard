@@ -1,0 +1,303 @@
+{
+  "model_name": "TemporalGraphFailurePredictor",
+  "horizon": 1,
+  "dataset_version": "agentguard_generalization_v1",
+  "sample_count": 88,
+  "feature_importance": [
+    {
+      "feature_name": "f_18",
+      "feature_group": "agent_behavior",
+      "importance_score": 1.0,
+      "signed_contribution": 0.011,
+      "baseline_value": null,
+      "perturbed_value": null,
+      "rank": 1
+    },
+    {
+      "feature_name": "f_6",
+      "feature_group": "agent_behavior",
+      "importance_score": 0.8784,
+      "signed_contribution": 0.0097,
+      "baseline_value": null,
+      "perturbed_value": null,
+      "rank": 2
+    },
+    {
+      "feature_name": "f_8",
+      "feature_group": "agent_behavior",
+      "importance_score": 0.8216,
+      "signed_contribution": 0.009,
+      "baseline_value": null,
+      "perturbed_value": null,
+      "rank": 3
+    },
+    {
+      "feature_name": "f_23",
+      "feature_group": "agent_behavior",
+      "importance_score": 0.6703,
+      "signed_contribution": 0.0074,
+      "baseline_value": null,
+      "perturbed_value": null,
+      "rank": 4
+    },
+    {
+      "feature_name": "f_26",
+      "feature_group": "agent_behavior",
+      "importance_score": 0.5568,
+      "signed_contribution": 0.0061,
+      "baseline_value": null,
+      "perturbed_value": null,
+      "rank": 5
+    },
+    {
+      "feature_name": "f_7",
+      "feature_group": "agent_behavior",
+      "importance_score": 0.4757,
+      "signed_contribution": 0.0052,
+      "baseline_value": null,
+      "perturbed_value": null,
+      "rank": 6
+    },
+    {
+      "feature_name": "f_11",
+      "feature_group": "agent_behavior",
+      "importance_score": 0.4757,
+      "signed_contribution": 0.0052,
+      "baseline_value": null,
+      "perturbed_value": null,
+      "rank": 7
+    },
+    {
+      "feature_name": "f_9",
+      "feature_group": "agent_behavior",
+      "importance_score": 0.3622,
+      "signed_contribution": 0.004,
+      "baseline_value": null,
+      "perturbed_value": null,
+      "rank": 8
+    },
+    {
+      "feature_name": "f_27",
+      "feature_group": "agent_behavior",
+      "importance_score": 0.3514,
+      "signed_contribution": 0.0039,
+      "baseline_value": null,
+      "perturbed_value": null,
+      "rank": 9
+    },
+    {
+      "feature_name": "f_16",
+      "feature_group": "agent_behavior",
+      "importance_score": 0.2703,
+      "signed_contribution": 0.003,
+      "baseline_value": null,
+      "perturbed_value": null,
+      "rank": 10
+    },
+    {
+      "feature_name": "f_3",
+      "feature_group": "agent_behavior",
+      "importance_score": 0.173,
+      "signed_contribution": 0.0019,
+      "baseline_value": null,
+      "perturbed_value": null,
+      "rank": 11
+    },
+    {
+      "feature_name": "f_25",
+      "feature_group": "agent_behavior",
+      "importance_score": 0.1459,
+      "signed_contribution": 0.0016,
+      "baseline_value": null,
+      "perturbed_value": null,
+      "rank": 12
+    },
+    {
+      "feature_name": "f_12",
+      "feature_group": "agent_behavior",
+      "importance_score": 0.1351,
+      "signed_contribution": 0.0015,
+      "baseline_value": null,
+      "perturbed_value": null,
+      "rank": 13
+    },
+    {
+      "feature_name": "f_14",
+      "feature_group": "agent_behavior",
+      "importance_score": 0.1351,
+      "signed_contribution": 0.0015,
+      "baseline_value": null,
+      "perturbed_value": null,
+      "rank": 14
+    },
+    {
+      "feature_name": "f_22",
+      "feature_group": "agent_behavior",
+      "importance_score": 0.1081,
+      "signed_contribution": 0.0012,
+      "baseline_value": null,
+      "perturbed_value": null,
+      "rank": 15
+    },
+    {
+      "feature_name": "f_24",
+      "feature_group": "agent_behavior",
+      "importance_score": 0.1027,
+      "signed_contribution": -0.0011,
+      "baseline_value": null,
+      "perturbed_value": null,
+      "rank": 16
+    },
+    {
+      "feature_name": "f_1",
+      "feature_group": "agent_behavior",
+      "importance_score": 0.027,
+      "signed_contribution": 0.0003,
+      "baseline_value": null,
+      "perturbed_value": null,
+      "rank": 17
+    },
+    {
+      "feature_name": "f_10",
+      "feature_group": "agent_behavior",
+      "importance_score": 0.0216,
+      "signed_contribution": 0.0002,
+      "baseline_value": null,
+      "perturbed_value": null,
+      "rank": 18
+    },
+    {
+      "feature_name": "f_0",
+      "feature_group": "agent_behavior",
+      "importance_score": 0.0216,
+      "signed_contribution": 0.0002,
+      "baseline_value": null,
+      "perturbed_value": null,
+      "rank": 19
+    },
+    {
+      "feature_name": "f_15",
+      "feature_group": "agent_behavior",
+      "importance_score": 0.0162,
+      "signed_contribution": 0.0002,
+      "baseline_value": null,
+      "perturbed_value": null,
+      "rank": 20
+    },
+    {
+      "feature_name": "f_13",
+      "feature_group": "agent_behavior",
+      "importance_score": 0.0054,
+      "signed_contribution": -0.0001,
+      "baseline_value": null,
+      "perturbed_value": null,
+      "rank": 21
+    },
+    {
+      "feature_name": "f_5",
+      "feature_group": "agent_behavior",
+      "importance_score": 0.0,
+      "signed_contribution": 0.0,
+      "baseline_value": null,
+      "perturbed_value": null,
+      "rank": 22
+    },
+    {
+      "feature_name": "f_4",
+      "feature_group": "agent_behavior",
+      "importance_score": 0.0,
+      "signed_contribution": 0.0,
+      "baseline_value": null,
+      "perturbed_value": null,
+      "rank": 23
+    },
+    {
+      "feature_name": "f_2",
+      "feature_group": "agent_behavior",
+      "importance_score": 0.0,
+      "signed_contribution": 0.0,
+      "baseline_value": null,
+      "perturbed_value": null,
+      "rank": 24
+    },
+    {
+      "feature_name": "f_20",
+      "feature_group": "agent_behavior",
+      "importance_score": 0.0,
+      "signed_contribution": 0.0,
+      "baseline_value": null,
+      "perturbed_value": null,
+      "rank": 25
+    },
+    {
+      "feature_name": "f_21",
+      "feature_group": "agent_behavior",
+      "importance_score": 0.0,
+      "signed_contribution": 0.0,
+      "baseline_value": null,
+      "perturbed_value": null,
+      "rank": 26
+    },
+    {
+      "feature_name": "f_17",
+      "feature_group": "agent_behavior",
+      "importance_score": 0.0,
+      "signed_contribution": 0.0,
+      "baseline_value": null,
+      "perturbed_value": null,
+      "rank": 27
+    },
+    {
+      "feature_name": "f_19",
+      "feature_group": "agent_behavior",
+      "importance_score": 0.0,
+      "signed_contribution": 0.0,
+      "baseline_value": null,
+      "perturbed_value": null,
+      "rank": 28
+    }
+  ],
+  "agent_role_importance": [
+    {
+      "role": "planner",
+      "frequency": 21,
+      "mean_importance": 0.3334
+    },
+    {
+      "role": "researcher",
+      "frequency": 21,
+      "mean_importance": 0.0481
+    },
+    {
+      "role": "critic",
+      "frequency": 4,
+      "mean_importance": 0.0011
+    },
+    {
+      "role": "analyst",
+      "frequency": 3,
+      "mean_importance": 0.0
+    }
+  ],
+  "interaction_importance": [
+    {
+      "path": "researcher_1 -> analyst_1",
+      "mean_importance": 0.6667
+    },
+    {
+      "path": "planner_1 -> researcher_1",
+      "mean_importance": 0.5
+    }
+  ],
+  "event_type_importance": [
+    {
+      "event_type": "error",
+      "mean_importance": 1.0
+    },
+    {
+      "event_type": "message",
+      "mean_importance": 0.4
+    }
+  ],
+  "created_at": "2026-10-04T02:50:12.729917+00:00"
+}

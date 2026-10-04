@@ -12,6 +12,7 @@ from ml.simulation.agents.roles import (
     AGENT_ROLE_REGISTRY,
     register_role,
     create_agent,
+    create_agent_roster,
 )
 
 __all__ = [
@@ -26,4 +27,5 @@ __all__ = [
     "AGENT_ROLE_REGISTRY",
     "register_role",
     "create_agent",
+    "create_agent_roster",
 ]

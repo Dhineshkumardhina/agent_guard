@@ -1,0 +1,51 @@
+[
+  {
+    "experiment_id": "G1",
+    "dimension": "agent_count",
+    "train_configuration": "[3, 5] agents",
+    "test_configuration": "[8] agents",
+    "models_tested": "Temporal GNN, Classical ML, Sequence, Static GNN"
+  },
+  {
+    "experiment_id": "G2",
+    "dimension": "agent_count",
+    "train_configuration": "[3, 5, 8] agents",
+    "test_configuration": "[12] agents",
+    "models_tested": "Temporal GNN, Classical ML, Sequence, Static GNN"
+  },
+  {
+    "experiment_id": "G3",
+    "dimension": "topology",
+    "train_configuration": "pipeline, star, mesh",
+    "test_configuration": "custom",
+    "models_tested": "Temporal GNN, Classical ML, Sequence, Static GNN"
+  },
+  {
+    "experiment_id": "G3b",
+    "dimension": "topology",
+    "train_configuration": "star, mesh, custom",
+    "test_configuration": "pipeline",
+    "models_tested": "Temporal GNN, Classical ML, Sequence, Static GNN"
+  },
+  {
+    "experiment_id": "G4",
+    "dimension": "task",
+    "train_configuration": "research, coding, planning",
+    "test_configuration": "analysis",
+    "models_tested": "Temporal GNN, Classical ML, Sequence, Static GNN"
+  },
+  {
+    "experiment_id": "G4b",
+    "dimension": "task",
+    "train_configuration": "coding, analysis, planning",
+    "test_configuration": "research",
+    "models_tested": "Temporal GNN, Classical ML, Sequence, Static GNN"
+  },
+  {
+    "experiment_id": "G5",
+    "dimension": "failure_type",
+    "train_configuration": "Seen Faults + Nominal",
+    "test_configuration": "Held-Out Unseen Faults",
+    "models_tested": "Temporal GNN, Classical ML, Sequence, Static GNN"
+  }
+]

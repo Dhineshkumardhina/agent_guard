@@ -1,0 +1,382 @@
+{
+  "Rule-Based": {
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "error_type": "False Negative",
+        "sample_id": "run_0003_agentguard_dataset_v1_s1_k1",
+        "run_id": "run_0003_agentguard_dataset_v1",
+        "timestamp": 3.1961,
+        "horizon": 1,
+        "model_name": "Rule-Based",
+        "predicted_probability": 0.3207,
+        "threshold": 0.5,
+        "true_label": 1,
+        "predicted_label": 0,
+        "context": {
+          "topology": "custom",
+          "task_type": "planning",
+          "failure_type": "none",
+          "failure_level": 3,
+          "number_of_agents": 12
+        }
+      },
+      {
+        "error_type": "False Negative",
+        "sample_id": "run_0003_agentguard_dataset_v1_s2_k1",
+        "run_id": "run_0003_agentguard_dataset_v1",
+        "timestamp": 3.3003,
+        "horizon": 1,
+        "model_name": "Rule-Based",
+        "predicted_probability": 0.2611,
+        "threshold": 0.5,
+        "true_label": 1,
+        "predicted_label": 0,
+        "context": {
+          "topology": "custom",
+          "task_type": "planning",
+          "failure_type": "none",
+          "failure_level": 3,
+          "number_of_agents": 12
+        }
+      },
+      {
+        "error_type": "False Negative",
+        "sample_id": "run_0003_agentguard_dataset_v1_s3_k1",
+        "run_id": "run_0003_agentguard_dataset_v1",
+        "timestamp": 3.6711,
+        "horizon": 1,
+        "model_name": "Rule-Based",
+        "predicted_probability": 0.2328,
+        "threshold": 0.5,
+        "true_label": 1,
+        "predicted_label": 0,
+        "context": {
+          "topology": "custom",
+          "task_type": "planning",
+          "failure_type": "none",
+          "failure_level": 3,
+          "number_of_agents": 12
+        }
+      },
+      {
+        "error_type": "False Negative",
+        "sample_id": "run_0003_agentguard_dataset_v1_s4_k1",
+        "run_id": "run_0003_agentguard_dataset_v1",
+        "timestamp": 3.9494,
+        "horizon": 1,
+        "model_name": "Rule-Based",
+        "predicted_probability": 0.2146,
+        "threshold": 0.5,
+        "true_label": 1,
+        "predicted_label": 0,
+        "context": {
+          "topology": "custom",
+          "task_type": "planning",
+          "failure_type": "none",
+          "failure_level": 3,
+          "number_of_agents": 12
+        }
+      },
+      {
+        "error_type": "False Negative",
+        "sample_id": "run_0003_agentguard_dataset_v1_s5_k1",
+        "run_id": "run_0003_agentguard_dataset_v1",
+        "timestamp": 4.0898,
+        "horizon": 1,
+        "model_name": "Rule-Based",
+        "predicted_probability": 0.2026,
+        "threshold": 0.5,
+        "true_label": 1,
+        "predicted_label": 0,
+        "context": {
+          "topology": "custom",
+          "task_type": "planning",
+          "failure_type": "none",
+          "failure_level": 3,
+          "number_of_agents": 12
+        }
+      },
+      {
+        "error_type": "False Negative",
+        "sample_id": "run_0003_agentguard_dataset_v1_s6_k1",
+        "run_id": "run_0003_agentguard_dataset_v1",
+        "timestamp": 4.2638,
+        "horizon": 1,
+        "model_name": "Rule-Based",
+        "predicted_probability": 0.1951,
+        "threshold": 0.5,
+        "true_label": 1,
+        "predicted_label": 0,
+        "context": {
+          "topology": "custom",
+          "task_type": "planning",
+          "failure_type": "none",
+          "failure_level": 3,
+          "number_of_agents": 12
+        }
+      },
+      {
+        "error_type": "False Negative",
+        "sample_id": "run_0003_agentguard_dataset_v1_s7_k1",
+        "run_id": "run_0003_agentguard_dataset_v1",
+        "timestamp": 4.4906,
+        "horizon": 1,
+        "model_name": "Rule-Based",
+        "predicted_probability": 0.1898,
+        "threshold": 0.5,
+        "true_label": 1,
+        "predicted_label": 0,
+        "context": {
+          "topology": "custom",
+          "task_type": "planning",
+          "failure_type": "none",
+          "failure_level": 3,
+          "number_of_agents": 12
+        }
+      },
+      {
+        "error_type": "False Negative",
+        "sample_id": "run_0003_agentguard_dataset_v1_s8_k1",
+        "run_id": "run_0003_agentguard_dataset_v1",
+        "timestamp": 4.6207,
+        "horizon": 1,
+        "model_name": "Rule-Based",
+        "predicted_probability": 0.185,
+        "threshold": 0.5,
+        "true_label": 1,
+        "predicted_label": 0,
+        "context": {
+          "topology": "custom",
+          "task_type": "planning",
+          "failure_type": "none",
+          "failure_level": 3,
+          "number_of_agents": 12
+        }
+      },
+      {
+        "error_type": "False Negative",
+        "sample_id": "run_0003_agentguard_dataset_v1_s9_k1",
+        "run_id": "run_0003_agentguard_dataset_v1",
+        "timestamp": 4.7477,
+        "horizon": 1,
+        "model_name": "Rule-Based",
+        "predicted_probability": 0.1814,
+        "threshold": 0.5,
+        "true_label": 1,
+        "predicted_label": 0,
+        "context": {
+          "topology": "custom",
+          "task_type": "planning",
+          "failure_type": "none",
+          "failure_level": 3,
+          "number_of_agents": 12
+        }
+      },
+      {
+        "error_type": "False Negative",
+        "sample_id": "run_0003_agentguard_dataset_v1_s10_k1",
+        "run_id": "run_0003_agentguard_dataset_v1",
+        "timestamp": 5.0506,
+        "horizon": 1,
+        "model_name": "Rule-Based",
+        "predicted_probability": 0.1782,
+        "threshold": 0.5,
+        "true_label": 1,
+        "predicted_label": 0,
+        "context": {
+          "topology": "custom",
+          "task_type": "planning",
+          "failure_type": "none",
+          "failure_level": 3,
+          "number_of_agents": 12
+        }
+      }
+    ],
+    "total_false_positives": 0,
+    "total_false_negatives": 11
+  },
+  "Logistic Regression": {
+    "false_positives": [],
+    "false_negatives": [],
+    "total_false_positives": 0,
+    "total_false_negatives": 0
+  },
+  "Random Forest": {
+    "false_positives": [],
+    "false_negatives": [],
+    "total_false_positives": 0,
+    "total_false_negatives": 0
+  },
+  "XGBoost": {
+    "false_positives": [],
+    "false_negatives": [],
+    "total_false_positives": 0,
+    "total_false_negatives": 0
+  },
+  "LSTM": {
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "error_type": "False Negative",
+        "sample_id": "run_0008_agentguard_dataset_v1_s0_k1",
+        "run_id": "run_0008_agentguard_dataset_v1",
+        "timestamp": 0.0,
+        "horizon": 1,
+        "model_name": "LSTM",
+        "predicted_probability": 0.4909,
+        "threshold": 0.5,
+        "true_label": 1,
+        "predicted_label": 0,
+        "context": {
+          "topology": "pipeline",
+          "task_type": "research",
+          "failure_type": "none",
+          "failure_level": 3,
+          "number_of_agents": 3
+        }
+      }
+    ],
+    "total_false_positives": 0,
+    "total_false_negatives": 1
+  },
+  "GRU": {
+    "false_positives": [],
+    "false_negatives": [],
+    "total_false_positives": 0,
+    "total_false_negatives": 0
+  },
+  "GCN": {
+    "false_positives": [],
+    "false_negatives": [],
+    "total_false_positives": 0,
+    "total_false_negatives": 0
+  },
+  "GAT": {
+    "false_positives": [],
+    "false_negatives": [],
+    "total_false_positives": 0,
+    "total_false_negatives": 0
+  },
+  "Temporal GNN": {
+    "false_positives": [],
+    "false_negatives": [
+      {
+        "error_type": "False Negative",
+        "sample_id": "run_0003_agentguard_dataset_v1_s7_k1",
+        "run_id": "run_0003_agentguard_dataset_v1",
+        "timestamp": 4.4906,
+        "horizon": 1,
+        "model_name": "Temporal GNN",
+        "predicted_probability": 0.4773,
+        "threshold": 0.5,
+        "true_label": 1,
+        "predicted_label": 0,
+        "context": {
+          "topology": "custom",
+          "task_type": "planning",
+          "failure_type": "none",
+          "failure_level": 3,
+          "number_of_agents": 12
+        }
+      },
+      {
+        "error_type": "False Negative",
+        "sample_id": "run_0003_agentguard_dataset_v1_s8_k1",
+        "run_id": "run_0003_agentguard_dataset_v1",
+        "timestamp": 4.6207,
+        "horizon": 1,
+        "model_name": "Temporal GNN",
+        "predicted_probability": 0.4776,
+        "threshold": 0.5,
+        "true_label": 1,
+        "predicted_label": 0,
+        "context": {
+          "topology": "custom",
+          "task_type": "planning",
+          "failure_type": "none",
+          "failure_level": 3,
+          "number_of_agents": 12
+        }
+      },
+      {
+        "error_type": "False Negative",
+        "sample_id": "run_0003_agentguard_dataset_v1_s9_k1",
+        "run_id": "run_0003_agentguard_dataset_v1",
+        "timestamp": 4.7477,
+        "horizon": 1,
+        "model_name": "Temporal GNN",
+        "predicted_probability": 0.4758,
+        "threshold": 0.5,
+        "true_label": 1,
+        "predicted_label": 0,
+        "context": {
+          "topology": "custom",
+          "task_type": "planning",
+          "failure_type": "none",
+          "failure_level": 3,
+          "number_of_agents": 12
+        }
+      },
+      {
+        "error_type": "False Negative",
+        "sample_id": "run_0003_agentguard_dataset_v1_s10_k1",
+        "run_id": "run_0003_agentguard_dataset_v1",
+        "timestamp": 5.0506,
+        "horizon": 1,
+        "model_name": "Temporal GNN",
+        "predicted_probability": 0.4776,
+        "threshold": 0.5,
+        "true_label": 1,
+        "predicted_label": 0,
+        "context": {
+          "topology": "custom",
+          "task_type": "planning",
+          "failure_type": "none",
+          "failure_level": 3,
+          "number_of_agents": 12
+        }
+      },
+      {
+        "error_type": "False Negative",
+        "sample_id": "run_0003_agentguard_dataset_v1_s11_k1",
+        "run_id": "run_0003_agentguard_dataset_v1",
+        "timestamp": 5.3367,
+        "horizon": 1,
+        "model_name": "Temporal GNN",
+        "predicted_probability": 0.4778,
+        "threshold": 0.5,
+        "true_label": 1,
+        "predicted_label": 0,
+        "context": {
+          "topology": "custom",
+          "task_type": "planning",
+          "failure_type": "none",
+          "failure_level": 3,
+          "number_of_agents": 12
+        }
+      },
+      {
+        "error_type": "False Negative",
+        "sample_id": "run_0008_agentguard_dataset_v1_s0_k1",
+        "run_id": "run_0008_agentguard_dataset_v1",
+        "timestamp": 0.0,
+        "horizon": 1,
+        "model_name": "Temporal GNN",
+        "predicted_probability": 0.4682,
+        "threshold": 0.5,
+        "true_label": 1,
+        "predicted_label": 0,
+        "context": {
+          "topology": "pipeline",
+          "task_type": "research",
+          "failure_type": "none",
+          "failure_level": 3,
+          "number_of_agents": 3
+        }
+      }
+    ],
+    "total_false_positives": 0,
+    "total_false_negatives": 6
+  }
+}

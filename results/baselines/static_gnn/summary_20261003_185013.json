@@ -1,0 +1,163 @@
+{
+  "dataset_version": "agentguard_dataset_v1",
+  "feature_version": "v1_static_gnn_14node_10edge",
+  "models": [
+    "gcn",
+    "gat"
+  ],
+  "horizons": [
+    1
+  ],
+  "random_seed": 42,
+  "pytorch_version": "2.14.1+cpu",
+  "pyg_version": "2.8.0.post1",
+  "device": "cpu",
+  "timestamp": "20261003_185013",
+  "results": {
+    "gcn": {
+      "k_1": {
+        "experiment_id": "static_gcn_k1_20261003_185013",
+        "model_name": "gcn",
+        "prediction_horizon": 1,
+        "selected_threshold": 0.5,
+        "metrics": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "auroc": 1.0,
+          "auprc": 1.0,
+          "false_positive_rate": 0.0,
+          "false_alarm_rate": 0.0,
+          "confusion_matrix": {
+            "tp": 13,
+            "fp": 0,
+            "tn": 1,
+            "fn": 0,
+            "total": 14
+          },
+          "threshold_used": 0.5
+        },
+        "lead_time": {
+          "mean_lead_time": 0.0,
+          "median_lead_time": 0.0,
+          "min_lead_time": 0.0,
+          "max_lead_time": 0.0,
+          "successful_early_warnings": 2,
+          "total_failed_trajectories": 2,
+          "early_warning_detection_rate": 1.0,
+          "total_warnings_emitted": 13,
+          "warnings_per_trajectory": 4.33,
+          "lead_times_sample": [
+            0.0,
+            0.0
+          ]
+        },
+        "training": {
+          "epochs_trained": 3,
+          "best_epoch": 3,
+          "best_val_loss": 0.6246458292007446
+        },
+        "metadata": {
+          "experiment_id": "static_gcn_k1_20261003_185013",
+          "dataset_version": "agentguard_dataset_v1",
+          "feature_version": "v1_static_gnn_14node_10edge",
+          "graph_representation_version": "discrete_snapshot_G(t)",
+          "prediction_horizon": 1,
+          "model_name": "gcn",
+          "hidden_dim": 64,
+          "num_layers": 2,
+          "dropout": 0.2,
+          "heads": null,
+          "pooling": "mean",
+          "batch_size": 16,
+          "pos_weight": 2.0312,
+          "train_samples": 97,
+          "val_samples": 19,
+          "test_samples": 14
+        }
+      }
+    },
+    "gat": {
+      "k_1": {
+        "experiment_id": "static_gat_k1_20261003_185013",
+        "model_name": "gat",
+        "prediction_horizon": 1,
+        "selected_threshold": 0.5,
+        "metrics": {
+          "precision": 1.0,
+          "recall": 0.1538,
+          "f1": 0.2667,
+          "auroc": 0.1538,
+          "auprc": 0.8909,
+          "false_positive_rate": 0.0,
+          "false_alarm_rate": 0.0,
+          "confusion_matrix": {
+            "tp": 2,
+            "fp": 0,
+            "tn": 1,
+            "fn": 11,
+            "total": 14
+          },
+          "threshold_used": 0.5
+        },
+        "lead_time": {
+          "mean_lead_time": 0.0,
+          "median_lead_time": 0.0,
+          "min_lead_time": 0.0,
+          "max_lead_time": 0.0,
+          "successful_early_warnings": 2,
+          "total_failed_trajectories": 2,
+          "early_warning_detection_rate": 1.0,
+          "total_warnings_emitted": 2,
+          "warnings_per_trajectory": 0.67,
+          "lead_times_sample": [
+            0.0,
+            0.0
+          ]
+        },
+        "training": {
+          "epochs_trained": 3,
+          "best_epoch": 1,
+          "best_val_loss": 0.674234002828598
+        },
+        "metadata": {
+          "experiment_id": "static_gat_k1_20261003_185013",
+          "dataset_version": "agentguard_dataset_v1",
+          "feature_version": "v1_static_gnn_14node_10edge",
+          "graph_representation_version": "discrete_snapshot_G(t)",
+          "prediction_horizon": 1,
+          "model_name": "gat",
+          "hidden_dim": 64,
+          "num_layers": 2,
+          "dropout": 0.2,
+          "heads": 4,
+          "pooling": "mean",
+          "batch_size": 16,
+          "pos_weight": 2.0312,
+          "train_samples": 97,
+          "val_samples": 19,
+          "test_samples": 14
+        }
+      }
+    }
+  },
+  "diagnostics": {
+    "num_graphs": 97,
+    "avg_nodes_per_graph": 4.9381,
+    "avg_edges_per_graph": 4.7423,
+    "avg_graph_density": 0.3508,
+    "total_isolated_nodes": 0,
+    "avg_node_degree": 1.9207,
+    "topology_distribution": {
+      "star": 35,
+      "pipeline": 2,
+      "mesh": 24,
+      "custom": 36
+    },
+    "class_distribution": {
+      "positive_count": 32,
+      "negative_count": 65,
+      "positive_ratio": 0.3299
+    }
+  }
+}

@@ -20,6 +20,7 @@ from ml.simulation.agents.roles import (
     Verifier,
     Critic,
     DecisionAgent,
+    create_agent_roster,
 )
 from ml.simulation.topologies import (
     BaseTopology,
@@ -50,6 +51,7 @@ class SimulationRun:
         max_steps: int = 50,
         fault_injector: Optional[FaultInjector] = None,
         fault_config: Optional[Dict[str, Any]] = None,
+        num_agents: Optional[int] = None,
     ) -> None:
         """Initialize simulation run parameters.
         
@@ -63,6 +65,7 @@ class SimulationRun:
             max_steps: Maximum allowable steps before safety cutoff.
             fault_injector: Optional FaultInjector instance for controlled failure injection.
             fault_config: Optional dictionary to instantiate a FaultInjector.
+            num_agents: Optional number of agents to initialize if agents list is not provided.
         """
         self.run_id: str = run_id or f"run_{uuid4().hex[:12]}"
         
@@ -116,6 +119,8 @@ class SimulationRun:
         # Setup agents
         if agents is not None:
             self.agents: List[Agent] = list(agents)
+        elif num_agents is not None:
+            self.agents = create_agent_roster(num_agents=num_agents)
         else:
             self.agents = self._create_default_agents()
 
@@ -251,6 +256,17 @@ class SimulationRun:
                 if step_idx >= self.max_steps:
                     break
                 process_step(self.agents[i], self.agents[i + 1])
+
+        elif self.topology == "custom":
+            agent_map = {a.agent_id: a for a in self.agents}
+            edges = list(self._topology_instance.graph.edges()) if self._topology_instance else []
+            if not edges:
+                edges = [(self.agents[i].agent_id, self.agents[i + 1].agent_id) for i in range(len(self.agents) - 1)]
+            for src_id, dst_id in edges:
+                if step_idx >= self.max_steps:
+                    break
+                if src_id in agent_map and dst_id in agent_map:
+                    process_step(agent_map[src_id], agent_map[dst_id])
 
         self.end_time = round(sim_time, 4)
         self.duration_seconds = self.end_time - self.start_time

@@ -1,0 +1,446 @@
+{
+  "experiment_id": "exp_seq_20261003_130744_446422",
+  "timestamp": "2026-10-03T13:07:44.016167+00:00",
+  "dataset_version": "agentguard_dataset_v1",
+  "feature_version": "v1 (28 tabular features)",
+  "random_seed": 42,
+  "device": "cpu",
+  "models": [
+    "lstm",
+    "gru"
+  ],
+  "sequence_lengths": [
+    5,
+    10
+  ],
+  "horizons": [
+    1,
+    3,
+    5
+  ],
+  "training_hyperparameters": {
+    "epochs": 10,
+    "batch_size": 16,
+    "lr": 0.001,
+    "hidden_size": 64,
+    "num_layers": 2,
+    "dropout": 0.2,
+    "patience": 5
+  },
+  "results": {
+    "lstm": {
+      "seq_5": {
+        "k_1": {
+          "metrics": {
+            "precision": 1.0,
+            "recall": 0.8462,
+            "f1": 0.9167,
+            "auroc": 1.0,
+            "auprc": 1.0,
+            "false_positive_rate": 0.0,
+            "false_alarm_rate": 0.0,
+            "confusion_matrix": {
+              "tp": 11,
+              "fp": 0,
+              "tn": 1,
+              "fn": 2,
+              "total": 14
+            },
+            "threshold_used": 0.5
+          },
+          "lead_time": {
+            "mean_lead_time": 0.0,
+            "median_lead_time": 0.0,
+            "min_lead_time": 0.0,
+            "max_lead_time": 0.0,
+            "successful_early_warnings": 0,
+            "total_failed_trajectories": 2,
+            "early_warning_detection_rate": 0.0,
+            "total_warnings_emitted": 11,
+            "warnings_per_trajectory": 3.67,
+            "lead_times_sample": []
+          },
+          "selected_threshold": 0.5
+        },
+        "k_3": {
+          "metrics": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "auroc": 0.5,
+            "auprc": 1.0,
+            "false_positive_rate": 0.0,
+            "false_alarm_rate": 0.0,
+            "confusion_matrix": {
+              "tp": 10,
+              "fp": 0,
+              "tn": 0,
+              "fn": 0,
+              "total": 10
+            },
+            "threshold_used": 0.5
+          },
+          "lead_time": {
+            "mean_lead_time": 0.0,
+            "median_lead_time": 0.0,
+            "min_lead_time": 0.0,
+            "max_lead_time": 0.0,
+            "successful_early_warnings": 1,
+            "total_failed_trajectories": 1,
+            "early_warning_detection_rate": 1.0,
+            "total_warnings_emitted": 10,
+            "warnings_per_trajectory": 10.0,
+            "lead_times_sample": [
+              0.0
+            ]
+          },
+          "selected_threshold": 0.5
+        },
+        "k_5": {
+          "metrics": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "auroc": 0.5,
+            "auprc": 1.0,
+            "false_positive_rate": 0.0,
+            "false_alarm_rate": 0.0,
+            "confusion_matrix": {
+              "tp": 8,
+              "fp": 0,
+              "tn": 0,
+              "fn": 0,
+              "total": 8
+            },
+            "threshold_used": 0.5
+          },
+          "lead_time": {
+            "mean_lead_time": 0.0,
+            "median_lead_time": 0.0,
+            "min_lead_time": 0.0,
+            "max_lead_time": 0.0,
+            "successful_early_warnings": 1,
+            "total_failed_trajectories": 1,
+            "early_warning_detection_rate": 1.0,
+            "total_warnings_emitted": 8,
+            "warnings_per_trajectory": 8.0,
+            "lead_times_sample": [
+              0.0
+            ]
+          },
+          "selected_threshold": 0.5
+        }
+      },
+      "seq_10": {
+        "k_1": {
+          "metrics": {
+            "precision": 1.0,
+            "recall": 0.9231,
+            "f1": 0.96,
+            "auroc": 1.0,
+            "auprc": 1.0,
+            "false_positive_rate": 0.0,
+            "false_alarm_rate": 0.0,
+            "confusion_matrix": {
+              "tp": 12,
+              "fp": 0,
+              "tn": 1,
+              "fn": 1,
+              "total": 14
+            },
+            "threshold_used": 0.5
+          },
+          "lead_time": {
+            "mean_lead_time": 0.0,
+            "median_lead_time": 0.0,
+            "min_lead_time": 0.0,
+            "max_lead_time": 0.0,
+            "successful_early_warnings": 1,
+            "total_failed_trajectories": 2,
+            "early_warning_detection_rate": 0.5,
+            "total_warnings_emitted": 12,
+            "warnings_per_trajectory": 4.0,
+            "lead_times_sample": [
+              0.0
+            ]
+          },
+          "selected_threshold": 0.5
+        },
+        "k_3": {
+          "metrics": {
+            "precision": 1.0,
+            "recall": 0.9,
+            "f1": 0.9474,
+            "auroc": 0.5,
+            "auprc": 1.0,
+            "false_positive_rate": 0.0,
+            "false_alarm_rate": 0.0,
+            "confusion_matrix": {
+              "tp": 9,
+              "fp": 0,
+              "tn": 0,
+              "fn": 1,
+              "total": 10
+            },
+            "threshold_used": 0.5
+          },
+          "lead_time": {
+            "mean_lead_time": 0.0,
+            "median_lead_time": 0.0,
+            "min_lead_time": 0.0,
+            "max_lead_time": 0.0,
+            "successful_early_warnings": 0,
+            "total_failed_trajectories": 1,
+            "early_warning_detection_rate": 0.0,
+            "total_warnings_emitted": 9,
+            "warnings_per_trajectory": 9.0,
+            "lead_times_sample": []
+          },
+          "selected_threshold": 0.5
+        },
+        "k_5": {
+          "metrics": {
+            "precision": 1.0,
+            "recall": 0.875,
+            "f1": 0.9333,
+            "auroc": 0.5,
+            "auprc": 1.0,
+            "false_positive_rate": 0.0,
+            "false_alarm_rate": 0.0,
+            "confusion_matrix": {
+              "tp": 7,
+              "fp": 0,
+              "tn": 0,
+              "fn": 1,
+              "total": 8
+            },
+            "threshold_used": 0.5
+          },
+          "lead_time": {
+            "mean_lead_time": 0.0,
+            "median_lead_time": 0.0,
+            "min_lead_time": 0.0,
+            "max_lead_time": 0.0,
+            "successful_early_warnings": 0,
+            "total_failed_trajectories": 1,
+            "early_warning_detection_rate": 0.0,
+            "total_warnings_emitted": 7,
+            "warnings_per_trajectory": 7.0,
+            "lead_times_sample": []
+          },
+          "selected_threshold": 0.5
+        }
+      }
+    },
+    "gru": {
+      "seq_5": {
+        "k_1": {
+          "metrics": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "auroc": 1.0,
+            "auprc": 1.0,
+            "false_positive_rate": 0.0,
+            "false_alarm_rate": 0.0,
+            "confusion_matrix": {
+              "tp": 13,
+              "fp": 0,
+              "tn": 1,
+              "fn": 0,
+              "total": 14
+            },
+            "threshold_used": 0.5
+          },
+          "lead_time": {
+            "mean_lead_time": 0.0,
+            "median_lead_time": 0.0,
+            "min_lead_time": 0.0,
+            "max_lead_time": 0.0,
+            "successful_early_warnings": 2,
+            "total_failed_trajectories": 2,
+            "early_warning_detection_rate": 1.0,
+            "total_warnings_emitted": 13,
+            "warnings_per_trajectory": 4.33,
+            "lead_times_sample": [
+              0.0,
+              0.0
+            ]
+          },
+          "selected_threshold": 0.5
+        },
+        "k_3": {
+          "metrics": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "auroc": 0.5,
+            "auprc": 1.0,
+            "false_positive_rate": 0.0,
+            "false_alarm_rate": 0.0,
+            "confusion_matrix": {
+              "tp": 10,
+              "fp": 0,
+              "tn": 0,
+              "fn": 0,
+              "total": 10
+            },
+            "threshold_used": 0.5
+          },
+          "lead_time": {
+            "mean_lead_time": 0.0,
+            "median_lead_time": 0.0,
+            "min_lead_time": 0.0,
+            "max_lead_time": 0.0,
+            "successful_early_warnings": 1,
+            "total_failed_trajectories": 1,
+            "early_warning_detection_rate": 1.0,
+            "total_warnings_emitted": 10,
+            "warnings_per_trajectory": 10.0,
+            "lead_times_sample": [
+              0.0
+            ]
+          },
+          "selected_threshold": 0.5
+        },
+        "k_5": {
+          "metrics": {
+            "precision": 1.0,
+            "recall": 0.875,
+            "f1": 0.9333,
+            "auroc": 0.5,
+            "auprc": 1.0,
+            "false_positive_rate": 0.0,
+            "false_alarm_rate": 0.0,
+            "confusion_matrix": {
+              "tp": 7,
+              "fp": 0,
+              "tn": 0,
+              "fn": 1,
+              "total": 8
+            },
+            "threshold_used": 0.5
+          },
+          "lead_time": {
+            "mean_lead_time": 0.0,
+            "median_lead_time": 0.0,
+            "min_lead_time": 0.0,
+            "max_lead_time": 0.0,
+            "successful_early_warnings": 0,
+            "total_failed_trajectories": 1,
+            "early_warning_detection_rate": 0.0,
+            "total_warnings_emitted": 7,
+            "warnings_per_trajectory": 7.0,
+            "lead_times_sample": []
+          },
+          "selected_threshold": 0.5
+        }
+      },
+      "seq_10": {
+        "k_1": {
+          "metrics": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "auroc": 1.0,
+            "auprc": 1.0,
+            "false_positive_rate": 0.0,
+            "false_alarm_rate": 0.0,
+            "confusion_matrix": {
+              "tp": 13,
+              "fp": 0,
+              "tn": 1,
+              "fn": 0,
+              "total": 14
+            },
+            "threshold_used": 0.5
+          },
+          "lead_time": {
+            "mean_lead_time": 0.0,
+            "median_lead_time": 0.0,
+            "min_lead_time": 0.0,
+            "max_lead_time": 0.0,
+            "successful_early_warnings": 2,
+            "total_failed_trajectories": 2,
+            "early_warning_detection_rate": 1.0,
+            "total_warnings_emitted": 13,
+            "warnings_per_trajectory": 4.33,
+            "lead_times_sample": [
+              0.0,
+              0.0
+            ]
+          },
+          "selected_threshold": 0.5
+        },
+        "k_3": {
+          "metrics": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "auroc": 0.5,
+            "auprc": 1.0,
+            "false_positive_rate": 0.0,
+            "false_alarm_rate": 0.0,
+            "confusion_matrix": {
+              "tp": 10,
+              "fp": 0,
+              "tn": 0,
+              "fn": 0,
+              "total": 10
+            },
+            "threshold_used": 0.5
+          },
+          "lead_time": {
+            "mean_lead_time": 0.0,
+            "median_lead_time": 0.0,
+            "min_lead_time": 0.0,
+            "max_lead_time": 0.0,
+            "successful_early_warnings": 1,
+            "total_failed_trajectories": 1,
+            "early_warning_detection_rate": 1.0,
+            "total_warnings_emitted": 10,
+            "warnings_per_trajectory": 10.0,
+            "lead_times_sample": [
+              0.0
+            ]
+          },
+          "selected_threshold": 0.5
+        },
+        "k_5": {
+          "metrics": {
+            "precision": 1.0,
+            "recall": 1.0,
+            "f1": 1.0,
+            "auroc": 0.5,
+            "auprc": 1.0,
+            "false_positive_rate": 0.0,
+            "false_alarm_rate": 0.0,
+            "confusion_matrix": {
+              "tp": 8,
+              "fp": 0,
+              "tn": 0,
+              "fn": 0,
+              "total": 8
+            },
+            "threshold_used": 0.5
+          },
+          "lead_time": {
+            "mean_lead_time": 0.0,
+            "median_lead_time": 0.0,
+            "min_lead_time": 0.0,
+            "max_lead_time": 0.0,
+            "successful_early_warnings": 1,
+            "total_failed_trajectories": 1,
+            "early_warning_detection_rate": 1.0,
+            "total_warnings_emitted": 8,
+            "warnings_per_trajectory": 8.0,
+            "lead_times_sample": [
+              0.0
+            ]
+          },
+          "selected_threshold": 0.5
+        }
+      }
+    }
+  }
+}

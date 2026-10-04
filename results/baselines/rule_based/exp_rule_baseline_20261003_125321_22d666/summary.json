@@ -1,0 +1,12 @@
+{
+  "experiment_id": "exp_rule_baseline_20261003_125321_22d666",
+  "model_name": "rule_based_early_warning",
+  "dataset_path": "data\\processed\\agentguard_dataset_v1",
+  "split": "test",
+  "sample_count": 35,
+  "timestamp": "2026-10-03T12:53:21.200349+00:00",
+  "overall_f1": 0.2564,
+  "overall_auroc": 1.0,
+  "mean_lead_time": 0.0,
+  "early_warning_detection_rate": 1.0
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "Model": "Rule-Based",
+    "Mean Lead Time (s)": 0.0,
+    "Median Lead Time (s)": 0.0,
+    "Successful Early Warnings": 0,
+    "Warnings / Trajectory": 0.0,
+    "False Alarm Rate": 0.0
+  },
+  {
+    "Model": "Logistic Regression",
+    "Mean Lead Time (s)": 0.0,
+    "Median Lead Time (s)": 0.0,
+    "Successful Early Warnings": 0,
+    "Warnings / Trajectory": 0.0,
+    "False Alarm Rate": 0.0
+  },
+  {
+    "Model": "Random Forest",
+    "Mean Lead Time (s)": 0.0,
+    "Median Lead Time (s)": 0.0,
+    "Successful Early Warnings": 0,
+    "Warnings / Trajectory": 0.0,
+    "False Alarm Rate": 0.0
+  },
+  {
+    "Model": "XGBoost",
+    "Mean Lead Time (s)": 0.0,
+    "Median Lead Time (s)": 0.0,
+    "Successful Early Warnings": 0,
+    "Warnings / Trajectory": 0.0,
+    "False Alarm Rate": 0.0
+  },
+  {
+    "Model": "LSTM",
+    "Mean Lead Time (s)": 0.0,
+    "Median Lead Time (s)": 0.0,
+    "Successful Early Warnings": 0,
+    "Warnings / Trajectory": 0.0,
+    "False Alarm Rate": 0.0
+  },
+  {
+    "Model": "GRU",
+    "Mean Lead Time (s)": 0.0,
+    "Median Lead Time (s)": 0.0,
+    "Successful Early Warnings": 0,
+    "Warnings / Trajectory": 0.0,
+    "False Alarm Rate": 0.0
+  },
+  {
+    "Model": "GCN",
+    "Mean Lead Time (s)": 0.0,
+    "Median Lead Time (s)": 0.0,
+    "Successful Early Warnings": 0,
+    "Warnings / Trajectory": 0.0,
+    "False Alarm Rate": 0.0
+  },
+  {
+    "Model": "GAT",
+    "Mean Lead Time (s)": 0.0,
+    "Median Lead Time (s)": 0.0,
+    "Successful Early Warnings": 0,
+    "Warnings / Trajectory": 0.0,
+    "False Alarm Rate": 0.0
+  },
+  {
+    "Model": "Temporal GNN",
+    "Mean Lead Time (s)": 0.0,
+    "Median Lead Time (s)": 0.0,
+    "Successful Early Warnings": 0,
+    "Warnings / Trajectory": 0.0,
+    "False Alarm Rate": 0.0
+  }
+]

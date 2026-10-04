@@ -48,6 +48,11 @@ class SimulationMessage:
         """Sanitize message content and ensure required defaults."""
         if not self.message:
             self.message = ""
+        # Deterministic event_id for research reproducibility when run_id is known
+        if self.run_id:
+            import uuid
+            self.event_id = str(uuid.uuid5(uuid.NAMESPACE_DNS, f"{self.run_id}_s{self.step_idx}"))
+
         # Redact any accidental credential leak patterns
         for forbidden in ["api_key", "secret_key", "bearer ", "password", "token="]:
             if forbidden in self.message.lower():

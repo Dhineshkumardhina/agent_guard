@@ -1,0 +1,91 @@
+{
+  "dataset_version": "agentguard_dataset_v1",
+  "feature_version": "v1_temporal_gnn_14node_10edge",
+  "model_name": "temporal_gnn",
+  "horizons": [
+    1
+  ],
+  "random_seed": 42,
+  "pytorch_version": "2.14.1+cpu",
+  "device": "cpu",
+  "timestamp": "20261003_190742",
+  "results": {
+    "k_1": {
+      "experiment_id": "temporal_gnn_k1_20261003_190742",
+      "model_name": "temporal_gnn",
+      "prediction_horizon": 1,
+      "selected_threshold": 0.5,
+      "metrics": {
+        "precision": 1.0,
+        "recall": 0.0769,
+        "f1": 0.1429,
+        "auroc": 0.0769,
+        "auprc": 0.8653,
+        "false_positive_rate": 0.0,
+        "false_alarm_rate": 0.0,
+        "confusion_matrix": {
+          "tp": 1,
+          "fp": 0,
+          "tn": 1,
+          "fn": 12,
+          "total": 14
+        },
+        "threshold_used": 0.5
+      },
+      "lead_time": {
+        "mean_lead_time": 0.0,
+        "median_lead_time": 0.0,
+        "min_lead_time": 0.0,
+        "max_lead_time": 0.0,
+        "successful_early_warnings": 1,
+        "total_failed_trajectories": 2,
+        "early_warning_detection_rate": 0.5,
+        "total_warnings_emitted": 1,
+        "warnings_per_trajectory": 0.33,
+        "lead_times_sample": [
+          0.0
+        ]
+      },
+      "training": {
+        "epochs_trained": 3,
+        "best_epoch": 3,
+        "best_val_loss": 0.6653472843923067
+      },
+      "metadata": {
+        "experiment_id": "temporal_gnn_k1_20261003_190742",
+        "dataset_version": "agentguard_dataset_v1",
+        "feature_version": "v1_temporal_gnn_14node_10edge",
+        "prediction_horizon": 1,
+        "model_name": "temporal_gnn",
+        "memory_dim": 64,
+        "time_dim": 16,
+        "embed_dim": 64,
+        "neighbor_history": 10,
+        "dropout": 0.2,
+        "pos_weight": 2.0312,
+        "train_trajectories": 14,
+        "val_trajectories": 3,
+        "test_trajectories": 3
+      }
+    }
+  },
+  "diagnostics": {
+    "number_of_runs": 14,
+    "total_interaction_events": 357,
+    "unique_agents_count": 12,
+    "average_interactions_per_run": 25.5,
+    "temporal_gap_distribution": {
+      "mean_delta_t": 0.0336,
+      "median_delta_t": 0.0,
+      "min_delta_t": 0.0,
+      "max_delta_t": 0.4277
+    },
+    "average_memory_updates_per_run": 51.0,
+    "total_prediction_points": 224,
+    "class_distribution": {
+      "positive_samples": 84,
+      "negative_samples": 140,
+      "positive_ratio": 0.375
+    }
+  }
+}

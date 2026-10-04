@@ -1,0 +1,110 @@
+[
+  {
+    "Model Family": "Rule-Based",
+    "Model": "Rule-Based",
+    "Precision": 1.0,
+    "Recall": 0.1538,
+    "F1": 0.2667,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "FPR": 0.0,
+    "Brier": 0.5315,
+    "ECE": 0.6989
+  },
+  {
+    "Model Family": "Classical ML",
+    "Model": "Logistic Regression",
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "FPR": 0.0,
+    "Brier": 0.0036,
+    "ECE": 0.0169
+  },
+  {
+    "Model Family": "Classical ML",
+    "Model": "Random Forest",
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "FPR": 0.0,
+    "Brier": 0.0011,
+    "ECE": 0.0164
+  },
+  {
+    "Model Family": "Classical ML",
+    "Model": "XGBoost",
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "FPR": 0.0,
+    "Brier": 0.001,
+    "ECE": 0.025
+  },
+  {
+    "Model Family": "Temporal Sequence",
+    "Model": "LSTM",
+    "Precision": 1.0,
+    "Recall": 0.9231,
+    "F1": 0.96,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "FPR": 0.0,
+    "Brier": 0.0486,
+    "ECE": 0.1579
+  },
+  {
+    "Model Family": "Temporal Sequence",
+    "Model": "GRU",
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "FPR": 0.0,
+    "Brier": 0.0295,
+    "ECE": 0.1046
+  },
+  {
+    "Model Family": "Static GNN",
+    "Model": "GCN",
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "FPR": 0.0,
+    "Brier": 0.0125,
+    "ECE": 0.0916
+  },
+  {
+    "Model Family": "Static GNN",
+    "Model": "GAT",
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "FPR": 0.0,
+    "Brier": 0.0352,
+    "ECE": 0.1736
+  },
+  {
+    "Model Family": "Temporal GNN",
+    "Model": "Temporal GNN",
+    "Precision": 1.0,
+    "Recall": 0.5385,
+    "F1": 0.7,
+    "AUROC": 0.9231,
+    "AUPRC": 0.9945,
+    "FPR": 0.0,
+    "Brier": 0.2577,
+    "ECE": 0.4401
+  }
+]

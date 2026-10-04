@@ -1,0 +1,342 @@
+[
+  {
+    "Model": "Rule-Based",
+    "Horizon": 1,
+    "Precision": 1.0,
+    "Recall": 0.1538,
+    "F1": 0.2667,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Sample Count": 14
+  },
+  {
+    "Model": "Rule-Based",
+    "Horizon": 3,
+    "Precision": 1.0,
+    "Recall": 0.1,
+    "F1": 0.1818,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Sample Count": 10
+  },
+  {
+    "Model": "Rule-Based",
+    "Horizon": 5,
+    "Precision": 1.0,
+    "Recall": 0.125,
+    "F1": 0.2222,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Sample Count": 8
+  },
+  {
+    "Model": "Rule-Based",
+    "Horizon": 10,
+    "Precision": 1.0,
+    "Recall": 0.3333,
+    "F1": 0.5,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Sample Count": 3
+  },
+  {
+    "Model": "Logistic Regression",
+    "Horizon": 1,
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Sample Count": 14
+  },
+  {
+    "Model": "Logistic Regression",
+    "Horizon": 3,
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Sample Count": 10
+  },
+  {
+    "Model": "Logistic Regression",
+    "Horizon": 5,
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Sample Count": 8
+  },
+  {
+    "Model": "Logistic Regression",
+    "Horizon": 10,
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Sample Count": 3
+  },
+  {
+    "Model": "Random Forest",
+    "Horizon": 1,
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Sample Count": 14
+  },
+  {
+    "Model": "Random Forest",
+    "Horizon": 3,
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Sample Count": 10
+  },
+  {
+    "Model": "Random Forest",
+    "Horizon": 5,
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Sample Count": 8
+  },
+  {
+    "Model": "Random Forest",
+    "Horizon": 10,
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Sample Count": 3
+  },
+  {
+    "Model": "XGBoost",
+    "Horizon": 1,
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Sample Count": 14
+  },
+  {
+    "Model": "XGBoost",
+    "Horizon": 3,
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Sample Count": 10
+  },
+  {
+    "Model": "XGBoost",
+    "Horizon": 5,
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Sample Count": 8
+  },
+  {
+    "Model": "XGBoost",
+    "Horizon": 10,
+    "Precision": 0.0,
+    "Recall": 0.0,
+    "F1": 0.0,
+    "AUROC": 0.5,
+    "AUPRC": 1.0,
+    "Sample Count": 3
+  },
+  {
+    "Model": "LSTM",
+    "Horizon": 1,
+    "Precision": 1.0,
+    "Recall": 0.9231,
+    "F1": 0.96,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Sample Count": 14
+  },
+  {
+    "Model": "LSTM",
+    "Horizon": 3,
+    "Precision": 1.0,
+    "Recall": 0.9,
+    "F1": 0.9474,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Sample Count": 10
+  },
+  {
+    "Model": "LSTM",
+    "Horizon": 5,
+    "Precision": 1.0,
+    "Recall": 0.875,
+    "F1": 0.9333,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Sample Count": 8
+  },
+  {
+    "Model": "GRU",
+    "Horizon": 1,
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Sample Count": 14
+  },
+  {
+    "Model": "GRU",
+    "Horizon": 3,
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Sample Count": 10
+  },
+  {
+    "Model": "GRU",
+    "Horizon": 5,
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Sample Count": 8
+  },
+  {
+    "Model": "GCN",
+    "Horizon": 1,
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Sample Count": 14
+  },
+  {
+    "Model": "GCN",
+    "Horizon": 3,
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Sample Count": 10
+  },
+  {
+    "Model": "GCN",
+    "Horizon": 5,
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Sample Count": 8
+  },
+  {
+    "Model": "GCN",
+    "Horizon": 10,
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Sample Count": 3
+  },
+  {
+    "Model": "GAT",
+    "Horizon": 1,
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Sample Count": 14
+  },
+  {
+    "Model": "GAT",
+    "Horizon": 3,
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Sample Count": 10
+  },
+  {
+    "Model": "GAT",
+    "Horizon": 5,
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Sample Count": 8
+  },
+  {
+    "Model": "GAT",
+    "Horizon": 10,
+    "Precision": 1.0,
+    "Recall": 1.0,
+    "F1": 1.0,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Sample Count": 3
+  },
+  {
+    "Model": "Temporal GNN",
+    "Horizon": 1,
+    "Precision": 1.0,
+    "Recall": 0.5385,
+    "F1": 0.7,
+    "AUROC": 0.9231,
+    "AUPRC": 0.9945,
+    "Sample Count": 14
+  },
+  {
+    "Model": "Temporal GNN",
+    "Horizon": 3,
+    "Precision": 0.0,
+    "Recall": 0.0,
+    "F1": 0.0,
+    "AUROC": 0.5,
+    "AUPRC": 1.0,
+    "Sample Count": 10
+  },
+  {
+    "Model": "Temporal GNN",
+    "Horizon": 5,
+    "Precision": 1.0,
+    "Recall": 0.375,
+    "F1": 0.5455,
+    "AUROC": 1.0,
+    "AUPRC": 1.0,
+    "Sample Count": 8
+  },
+  {
+    "Model": "Temporal GNN",
+    "Horizon": 10,
+    "Precision": 0.0,
+    "Recall": 0.0,
+    "F1": 0.0,
+    "AUROC": 0.5,
+    "AUPRC": 1.0,
+    "Sample Count": 3
+  }
+]

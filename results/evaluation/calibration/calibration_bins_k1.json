@@ -1,0 +1,740 @@
+{
+  "Rule-Based": [
+    {
+      "bin_idx": 0,
+      "bin_lower": 0.0,
+      "bin_upper": 0.1,
+      "predicted_prob_mean": 0.0287,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 1
+    },
+    {
+      "bin_idx": 1,
+      "bin_lower": 0.1,
+      "bin_upper": 0.2,
+      "predicted_prob_mean": 0.1841,
+      "observed_positive_ratio": 1.0,
+      "sample_count": 6
+    },
+    {
+      "bin_idx": 2,
+      "bin_lower": 0.2,
+      "bin_upper": 0.3,
+      "predicted_prob_mean": 0.2278,
+      "observed_positive_ratio": 1.0,
+      "sample_count": 4
+    },
+    {
+      "bin_idx": 3,
+      "bin_lower": 0.3,
+      "bin_upper": 0.4,
+      "predicted_prob_mean": 0.3207,
+      "observed_positive_ratio": 1.0,
+      "sample_count": 1
+    },
+    {
+      "bin_idx": 4,
+      "bin_lower": 0.4,
+      "bin_upper": 0.5,
+      "predicted_prob_mean": 0.4537,
+      "observed_positive_ratio": 1.0,
+      "sample_count": 2
+    },
+    {
+      "bin_idx": 5,
+      "bin_lower": 0.5,
+      "bin_upper": 0.6,
+      "predicted_prob_mean": 0.55,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 6,
+      "bin_lower": 0.6,
+      "bin_upper": 0.7,
+      "predicted_prob_mean": 0.65,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 7,
+      "bin_lower": 0.7,
+      "bin_upper": 0.8,
+      "predicted_prob_mean": 0.75,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 8,
+      "bin_lower": 0.8,
+      "bin_upper": 0.9,
+      "predicted_prob_mean": 0.85,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 9,
+      "bin_lower": 0.9,
+      "bin_upper": 1.0,
+      "predicted_prob_mean": 0.95,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    }
+  ],
+  "Logistic Regression": [
+    {
+      "bin_idx": 0,
+      "bin_lower": 0.0,
+      "bin_upper": 0.1,
+      "predicted_prob_mean": 0.05,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 1,
+      "bin_lower": 0.1,
+      "bin_upper": 0.2,
+      "predicted_prob_mean": 0.15,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 2,
+      "bin_lower": 0.2,
+      "bin_upper": 0.3,
+      "predicted_prob_mean": 0.2252,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 1
+    },
+    {
+      "bin_idx": 3,
+      "bin_lower": 0.3,
+      "bin_upper": 0.4,
+      "predicted_prob_mean": 0.35,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 4,
+      "bin_lower": 0.4,
+      "bin_upper": 0.5,
+      "predicted_prob_mean": 0.45,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 5,
+      "bin_lower": 0.5,
+      "bin_upper": 0.6,
+      "predicted_prob_mean": 0.55,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 6,
+      "bin_lower": 0.6,
+      "bin_upper": 0.7,
+      "predicted_prob_mean": 0.65,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 7,
+      "bin_lower": 0.7,
+      "bin_upper": 0.8,
+      "predicted_prob_mean": 0.75,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 8,
+      "bin_lower": 0.8,
+      "bin_upper": 0.9,
+      "predicted_prob_mean": 0.85,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 9,
+      "bin_lower": 0.9,
+      "bin_upper": 1.0,
+      "predicted_prob_mean": 0.9991,
+      "observed_positive_ratio": 1.0,
+      "sample_count": 13
+    }
+  ],
+  "Random Forest": [
+    {
+      "bin_idx": 0,
+      "bin_lower": 0.0,
+      "bin_upper": 0.1,
+      "predicted_prob_mean": 0.05,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 1,
+      "bin_lower": 0.1,
+      "bin_upper": 0.2,
+      "predicted_prob_mean": 0.11,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 1
+    },
+    {
+      "bin_idx": 2,
+      "bin_lower": 0.2,
+      "bin_upper": 0.3,
+      "predicted_prob_mean": 0.25,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 3,
+      "bin_lower": 0.3,
+      "bin_upper": 0.4,
+      "predicted_prob_mean": 0.35,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 4,
+      "bin_lower": 0.4,
+      "bin_upper": 0.5,
+      "predicted_prob_mean": 0.45,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 5,
+      "bin_lower": 0.5,
+      "bin_upper": 0.6,
+      "predicted_prob_mean": 0.55,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 6,
+      "bin_lower": 0.6,
+      "bin_upper": 0.7,
+      "predicted_prob_mean": 0.65,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 7,
+      "bin_lower": 0.7,
+      "bin_upper": 0.8,
+      "predicted_prob_mean": 0.75,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 8,
+      "bin_lower": 0.8,
+      "bin_upper": 0.9,
+      "predicted_prob_mean": 0.85,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 9,
+      "bin_lower": 0.9,
+      "bin_upper": 1.0,
+      "predicted_prob_mean": 0.9908,
+      "observed_positive_ratio": 1.0,
+      "sample_count": 13
+    }
+  ],
+  "XGBoost": [
+    {
+      "bin_idx": 0,
+      "bin_lower": 0.0,
+      "bin_upper": 0.1,
+      "predicted_prob_mean": 0.0818,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 1
+    },
+    {
+      "bin_idx": 1,
+      "bin_lower": 0.1,
+      "bin_upper": 0.2,
+      "predicted_prob_mean": 0.15,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 2,
+      "bin_lower": 0.2,
+      "bin_upper": 0.3,
+      "predicted_prob_mean": 0.25,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 3,
+      "bin_lower": 0.3,
+      "bin_upper": 0.4,
+      "predicted_prob_mean": 0.35,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 4,
+      "bin_lower": 0.4,
+      "bin_upper": 0.5,
+      "predicted_prob_mean": 0.45,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 5,
+      "bin_lower": 0.5,
+      "bin_upper": 0.6,
+      "predicted_prob_mean": 0.55,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 6,
+      "bin_lower": 0.6,
+      "bin_upper": 0.7,
+      "predicted_prob_mean": 0.65,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 7,
+      "bin_lower": 0.7,
+      "bin_upper": 0.8,
+      "predicted_prob_mean": 0.75,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 8,
+      "bin_lower": 0.8,
+      "bin_upper": 0.9,
+      "predicted_prob_mean": 0.85,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 9,
+      "bin_lower": 0.9,
+      "bin_upper": 1.0,
+      "predicted_prob_mean": 0.9794,
+      "observed_positive_ratio": 1.0,
+      "sample_count": 13
+    }
+  ],
+  "LSTM": [
+    {
+      "bin_idx": 0,
+      "bin_lower": 0.0,
+      "bin_upper": 0.1,
+      "predicted_prob_mean": 0.05,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 1,
+      "bin_lower": 0.1,
+      "bin_upper": 0.2,
+      "predicted_prob_mean": 0.15,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 2,
+      "bin_lower": 0.2,
+      "bin_upper": 0.3,
+      "predicted_prob_mean": 0.25,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 3,
+      "bin_lower": 0.3,
+      "bin_upper": 0.4,
+      "predicted_prob_mean": 0.3293,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 1
+    },
+    {
+      "bin_idx": 4,
+      "bin_lower": 0.4,
+      "bin_upper": 0.5,
+      "predicted_prob_mean": 0.4909,
+      "observed_positive_ratio": 1.0,
+      "sample_count": 1
+    },
+    {
+      "bin_idx": 5,
+      "bin_lower": 0.5,
+      "bin_upper": 0.6,
+      "predicted_prob_mean": 0.5442,
+      "observed_positive_ratio": 1.0,
+      "sample_count": 1
+    },
+    {
+      "bin_idx": 6,
+      "bin_lower": 0.6,
+      "bin_upper": 0.7,
+      "predicted_prob_mean": 0.65,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 7,
+      "bin_lower": 0.7,
+      "bin_upper": 0.8,
+      "predicted_prob_mean": 0.7675,
+      "observed_positive_ratio": 1.0,
+      "sample_count": 1
+    },
+    {
+      "bin_idx": 8,
+      "bin_lower": 0.8,
+      "bin_upper": 0.9,
+      "predicted_prob_mean": 0.8734,
+      "observed_positive_ratio": 1.0,
+      "sample_count": 1
+    },
+    {
+      "bin_idx": 9,
+      "bin_lower": 0.9,
+      "bin_upper": 1.0,
+      "predicted_prob_mean": 0.9381,
+      "observed_positive_ratio": 1.0,
+      "sample_count": 9
+    }
+  ],
+  "GRU": [
+    {
+      "bin_idx": 0,
+      "bin_lower": 0.0,
+      "bin_upper": 0.1,
+      "predicted_prob_mean": 0.05,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 1,
+      "bin_lower": 0.1,
+      "bin_upper": 0.2,
+      "predicted_prob_mean": 0.15,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 2,
+      "bin_lower": 0.2,
+      "bin_upper": 0.3,
+      "predicted_prob_mean": 0.25,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 3,
+      "bin_lower": 0.3,
+      "bin_upper": 0.4,
+      "predicted_prob_mean": 0.3116,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 1
+    },
+    {
+      "bin_idx": 4,
+      "bin_lower": 0.4,
+      "bin_upper": 0.5,
+      "predicted_prob_mean": 0.45,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 5,
+      "bin_lower": 0.5,
+      "bin_upper": 0.6,
+      "predicted_prob_mean": 0.5705,
+      "observed_positive_ratio": 1.0,
+      "sample_count": 1
+    },
+    {
+      "bin_idx": 6,
+      "bin_lower": 0.6,
+      "bin_upper": 0.7,
+      "predicted_prob_mean": 0.667,
+      "observed_positive_ratio": 1.0,
+      "sample_count": 1
+    },
+    {
+      "bin_idx": 7,
+      "bin_lower": 0.7,
+      "bin_upper": 0.8,
+      "predicted_prob_mean": 0.75,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 8,
+      "bin_lower": 0.8,
+      "bin_upper": 0.9,
+      "predicted_prob_mean": 0.8896,
+      "observed_positive_ratio": 1.0,
+      "sample_count": 1
+    },
+    {
+      "bin_idx": 9,
+      "bin_lower": 0.9,
+      "bin_upper": 1.0,
+      "predicted_prob_mean": 0.972,
+      "observed_positive_ratio": 1.0,
+      "sample_count": 10
+    }
+  ],
+  "GCN": [
+    {
+      "bin_idx": 0,
+      "bin_lower": 0.0,
+      "bin_upper": 0.1,
+      "predicted_prob_mean": 0.05,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 1,
+      "bin_lower": 0.1,
+      "bin_upper": 0.2,
+      "predicted_prob_mean": 0.1944,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 1
+    },
+    {
+      "bin_idx": 2,
+      "bin_lower": 0.2,
+      "bin_upper": 0.3,
+      "predicted_prob_mean": 0.25,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 3,
+      "bin_lower": 0.3,
+      "bin_upper": 0.4,
+      "predicted_prob_mean": 0.35,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 4,
+      "bin_lower": 0.4,
+      "bin_upper": 0.5,
+      "predicted_prob_mean": 0.45,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 5,
+      "bin_lower": 0.5,
+      "bin_upper": 0.6,
+      "predicted_prob_mean": 0.55,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 6,
+      "bin_lower": 0.6,
+      "bin_upper": 0.7,
+      "predicted_prob_mean": 0.65,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 7,
+      "bin_lower": 0.7,
+      "bin_upper": 0.8,
+      "predicted_prob_mean": 0.75,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 8,
+      "bin_lower": 0.8,
+      "bin_upper": 0.9,
+      "predicted_prob_mean": 0.8406,
+      "observed_positive_ratio": 1.0,
+      "sample_count": 4
+    },
+    {
+      "bin_idx": 9,
+      "bin_lower": 0.9,
+      "bin_upper": 1.0,
+      "predicted_prob_mean": 0.9499,
+      "observed_positive_ratio": 1.0,
+      "sample_count": 9
+    }
+  ],
+  "GAT": [
+    {
+      "bin_idx": 0,
+      "bin_lower": 0.0,
+      "bin_upper": 0.1,
+      "predicted_prob_mean": 0.05,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 1,
+      "bin_lower": 0.1,
+      "bin_upper": 0.2,
+      "predicted_prob_mean": 0.1916,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 1
+    },
+    {
+      "bin_idx": 2,
+      "bin_lower": 0.2,
+      "bin_upper": 0.3,
+      "predicted_prob_mean": 0.25,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 3,
+      "bin_lower": 0.3,
+      "bin_upper": 0.4,
+      "predicted_prob_mean": 0.35,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 4,
+      "bin_lower": 0.4,
+      "bin_upper": 0.5,
+      "predicted_prob_mean": 0.45,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 5,
+      "bin_lower": 0.5,
+      "bin_upper": 0.6,
+      "predicted_prob_mean": 0.55,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 6,
+      "bin_lower": 0.6,
+      "bin_upper": 0.7,
+      "predicted_prob_mean": 0.65,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 7,
+      "bin_lower": 0.7,
+      "bin_upper": 0.8,
+      "predicted_prob_mean": 0.7432,
+      "observed_positive_ratio": 1.0,
+      "sample_count": 4
+    },
+    {
+      "bin_idx": 8,
+      "bin_lower": 0.8,
+      "bin_upper": 0.9,
+      "predicted_prob_mean": 0.8311,
+      "observed_positive_ratio": 1.0,
+      "sample_count": 6
+    },
+    {
+      "bin_idx": 9,
+      "bin_lower": 0.9,
+      "bin_upper": 1.0,
+      "predicted_prob_mean": 0.9338,
+      "observed_positive_ratio": 1.0,
+      "sample_count": 3
+    }
+  ],
+  "Temporal GNN": [
+    {
+      "bin_idx": 0,
+      "bin_lower": 0.0,
+      "bin_upper": 0.1,
+      "predicted_prob_mean": 0.05,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 1,
+      "bin_lower": 0.1,
+      "bin_upper": 0.2,
+      "predicted_prob_mean": 0.15,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 2,
+      "bin_lower": 0.2,
+      "bin_upper": 0.3,
+      "predicted_prob_mean": 0.25,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 3,
+      "bin_lower": 0.3,
+      "bin_upper": 0.4,
+      "predicted_prob_mean": 0.35,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 4,
+      "bin_lower": 0.4,
+      "bin_upper": 0.5,
+      "predicted_prob_mean": 0.4751,
+      "observed_positive_ratio": 0.8571,
+      "sample_count": 7
+    },
+    {
+      "bin_idx": 5,
+      "bin_lower": 0.5,
+      "bin_upper": 0.6,
+      "predicted_prob_mean": 0.5019,
+      "observed_positive_ratio": 1.0,
+      "sample_count": 7
+    },
+    {
+      "bin_idx": 6,
+      "bin_lower": 0.6,
+      "bin_upper": 0.7,
+      "predicted_prob_mean": 0.65,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 7,
+      "bin_lower": 0.7,
+      "bin_upper": 0.8,
+      "predicted_prob_mean": 0.75,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 8,
+      "bin_lower": 0.8,
+      "bin_upper": 0.9,
+      "predicted_prob_mean": 0.85,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    },
+    {
+      "bin_idx": 9,
+      "bin_lower": 0.9,
+      "bin_upper": 1.0,
+      "predicted_prob_mean": 0.95,
+      "observed_positive_ratio": 0.0,
+      "sample_count": 0
+    }
+  ]
+}

@@ -1,0 +1,333 @@
+{
+  "experiment_id": "exp_classical_20261003_125823_3d61fc",
+  "model_name": "logistic_regression",
+  "dataset_version": "agentguard_dataset_v1",
+  "random_seed": 42,
+  "timestamp": "2026-10-03T12:58:23.186493+00:00",
+  "horizons": {
+    "1": {
+      "metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 1.0,
+        "auprc": 1.0,
+        "false_positive_rate": 0.0,
+        "false_alarm_rate": 0.0,
+        "confusion_matrix": {
+          "tp": 13,
+          "fp": 0,
+          "tn": 1,
+          "fn": 0,
+          "total": 14
+        }
+      },
+      "lead_time": {
+        "mean_lead_time": 0.0,
+        "median_lead_time": 0.0,
+        "min_lead_time": 0.0,
+        "max_lead_time": 0.0,
+        "successful_early_warnings": 2,
+        "total_failed_trajectories": 2,
+        "early_warning_detection_rate": 1.0,
+        "total_warnings_emitted": 13,
+        "warnings_per_trajectory": 4.33,
+        "lead_times_sample": [
+          0.0,
+          0.0
+        ]
+      },
+      "calibration": {
+        "brier_score": 0.0036,
+        "expected_calibration_error": 0.0169,
+        "bins": [
+          {
+            "bin_range": [
+              0.2,
+              0.4
+            ],
+            "count": 1,
+            "mean_predicted_prob": 0.2252,
+            "true_fraction": 0.0
+          },
+          {
+            "bin_range": [
+              0.8,
+              1.0
+            ],
+            "count": 13,
+            "mean_predicted_prob": 0.9991,
+            "true_fraction": 1.0
+          }
+        ]
+      },
+      "feature_importances": {
+        "feat_event_count": 0.0438,
+        "feat_message_count": 0.0438,
+        "feat_tool_calls": 0.129,
+        "feat_errors": 0.9694,
+        "feat_retries": 0.0,
+        "feat_timeouts": 0.129,
+        "feat_average_latency": 0.8013,
+        "feat_latency_variance": 0.7515,
+        "feat_average_confidence": 0.459,
+        "feat_confidence_variance": 0.28,
+        "feat_contradiction_rate": 0.0,
+        "feat_output_quality": 0.4897,
+        "feat_interaction_count": 0.0438,
+        "feat_unique_interacting_agents": 0.3532,
+        "feat_incoming_interactions": 0.4038,
+        "feat_outgoing_interactions": 0.4038,
+        "feat_interaction_frequency": 0.264,
+        "feat_communication_concentration": 0.0,
+        "feat_recent_error_rate": 0.3426,
+        "feat_recent_retry_rate": 0.0,
+        "feat_timeout_rate": 0.2316,
+        "feat_tool_failure_rate": 0.129,
+        "feat_recent_trend_latency": 0.4592,
+        "feat_rolling_mean_quality": 0.5174,
+        "feat_rolling_std_confidence": 0.1582,
+        "feat_recent_quality_change": 0.5351,
+        "feat_min_confidence": 0.3917,
+        "feat_min_output_quality": 0.5529
+      }
+    },
+    "3": {
+      "metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 0.5,
+        "auprc": 1.0,
+        "false_positive_rate": 0.0,
+        "false_alarm_rate": 0.0,
+        "confusion_matrix": {
+          "tp": 10,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "total": 10
+        }
+      },
+      "lead_time": {
+        "mean_lead_time": 0.0,
+        "median_lead_time": 0.0,
+        "min_lead_time": 0.0,
+        "max_lead_time": 0.0,
+        "successful_early_warnings": 1,
+        "total_failed_trajectories": 1,
+        "early_warning_detection_rate": 1.0,
+        "total_warnings_emitted": 10,
+        "warnings_per_trajectory": 10.0,
+        "lead_times_sample": [
+          0.0
+        ]
+      },
+      "calibration": {
+        "brier_score": 0.0,
+        "expected_calibration_error": 0.0011,
+        "bins": [
+          {
+            "bin_range": [
+              0.8,
+              1.0
+            ],
+            "count": 10,
+            "mean_predicted_prob": 0.9989,
+            "true_fraction": 1.0
+          }
+        ]
+      },
+      "feature_importances": {
+        "feat_event_count": 0.0232,
+        "feat_message_count": 0.0232,
+        "feat_tool_calls": 0.1171,
+        "feat_errors": 1.1124,
+        "feat_retries": 0.0,
+        "feat_timeouts": 0.1171,
+        "feat_average_latency": 0.7473,
+        "feat_latency_variance": 1.0479,
+        "feat_average_confidence": 0.2848,
+        "feat_confidence_variance": 0.2103,
+        "feat_contradiction_rate": 0.0,
+        "feat_output_quality": 0.4333,
+        "feat_interaction_count": 0.0232,
+        "feat_unique_interacting_agents": 0.0767,
+        "feat_incoming_interactions": 0.4523,
+        "feat_outgoing_interactions": 0.4523,
+        "feat_interaction_frequency": 0.2693,
+        "feat_communication_concentration": 0.0,
+        "feat_recent_error_rate": 0.281,
+        "feat_recent_retry_rate": 0.0,
+        "feat_timeout_rate": 0.2084,
+        "feat_tool_failure_rate": 0.1171,
+        "feat_recent_trend_latency": 0.4416,
+        "feat_rolling_mean_quality": 0.4727,
+        "feat_rolling_std_confidence": 0.1222,
+        "feat_recent_quality_change": 0.5729,
+        "feat_min_confidence": 0.2507,
+        "feat_min_output_quality": 0.5301
+      }
+    },
+    "5": {
+      "metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 0.5,
+        "auprc": 1.0,
+        "false_positive_rate": 0.0,
+        "false_alarm_rate": 0.0,
+        "confusion_matrix": {
+          "tp": 8,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "total": 8
+        }
+      },
+      "lead_time": {
+        "mean_lead_time": 0.0,
+        "median_lead_time": 0.0,
+        "min_lead_time": 0.0,
+        "max_lead_time": 0.0,
+        "successful_early_warnings": 1,
+        "total_failed_trajectories": 1,
+        "early_warning_detection_rate": 1.0,
+        "total_warnings_emitted": 8,
+        "warnings_per_trajectory": 8.0,
+        "lead_times_sample": [
+          0.0
+        ]
+      },
+      "calibration": {
+        "brier_score": 0.0,
+        "expected_calibration_error": 0.0013,
+        "bins": [
+          {
+            "bin_range": [
+              0.8,
+              1.0
+            ],
+            "count": 8,
+            "mean_predicted_prob": 0.9987,
+            "true_fraction": 1.0
+          }
+        ]
+      },
+      "feature_importances": {
+        "feat_event_count": 0.0525,
+        "feat_message_count": 0.0525,
+        "feat_tool_calls": 0.0531,
+        "feat_errors": 1.1096,
+        "feat_retries": 0.0,
+        "feat_timeouts": 0.0531,
+        "feat_average_latency": 0.4603,
+        "feat_latency_variance": 0.9064,
+        "feat_average_confidence": 0.0801,
+        "feat_confidence_variance": 0.0884,
+        "feat_contradiction_rate": 0.0,
+        "feat_output_quality": 0.3448,
+        "feat_interaction_count": 0.0525,
+        "feat_unique_interacting_agents": 0.0761,
+        "feat_incoming_interactions": 0.2142,
+        "feat_outgoing_interactions": 0.2142,
+        "feat_interaction_frequency": 0.6873,
+        "feat_communication_concentration": 0.0,
+        "feat_recent_error_rate": 0.4684,
+        "feat_recent_retry_rate": 0.0,
+        "feat_timeout_rate": 0.0805,
+        "feat_tool_failure_rate": 0.0531,
+        "feat_recent_trend_latency": 0.1223,
+        "feat_rolling_mean_quality": 0.4025,
+        "feat_rolling_std_confidence": 0.0365,
+        "feat_recent_quality_change": 0.7043,
+        "feat_min_confidence": 0.0719,
+        "feat_min_output_quality": 0.4993
+      }
+    },
+    "10": {
+      "metrics": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0,
+        "auroc": 0.5,
+        "auprc": 1.0,
+        "false_positive_rate": 0.0,
+        "false_alarm_rate": 0.0,
+        "confusion_matrix": {
+          "tp": 3,
+          "fp": 0,
+          "tn": 0,
+          "fn": 0,
+          "total": 3
+        }
+      },
+      "lead_time": {
+        "mean_lead_time": 0.0,
+        "median_lead_time": 0.0,
+        "min_lead_time": 0.0,
+        "max_lead_time": 0.0,
+        "successful_early_warnings": 1,
+        "total_failed_trajectories": 1,
+        "early_warning_detection_rate": 1.0,
+        "total_warnings_emitted": 3,
+        "warnings_per_trajectory": 3.0,
+        "lead_times_sample": [
+          0.0
+        ]
+      },
+      "calibration": {
+        "brier_score": 0.0014,
+        "expected_calibration_error": 0.034,
+        "bins": [
+          {
+            "bin_range": [
+              0.8,
+              1.0
+            ],
+            "count": 3,
+            "mean_predicted_prob": 0.966,
+            "true_fraction": 1.0
+          }
+        ]
+      },
+      "feature_importances": {
+        "feat_event_count": 0.088,
+        "feat_message_count": 0.088,
+        "feat_tool_calls": 0.1194,
+        "feat_errors": 0.5688,
+        "feat_retries": 0.0,
+        "feat_timeouts": 0.1194,
+        "feat_average_latency": 0.2475,
+        "feat_latency_variance": 0.5165,
+        "feat_average_confidence": 0.0756,
+        "feat_confidence_variance": 0.0592,
+        "feat_contradiction_rate": 0.0,
+        "feat_output_quality": 0.1146,
+        "feat_interaction_count": 0.088,
+        "feat_unique_interacting_agents": 0.088,
+        "feat_incoming_interactions": 0.1365,
+        "feat_outgoing_interactions": 0.1365,
+        "feat_interaction_frequency": 0.0337,
+        "feat_communication_concentration": 0.0,
+        "feat_recent_error_rate": 0.3732,
+        "feat_recent_retry_rate": 0.0,
+        "feat_timeout_rate": 0.0895,
+        "feat_tool_failure_rate": 0.1194,
+        "feat_recent_trend_latency": 0.4891,
+        "feat_rolling_mean_quality": 0.1169,
+        "feat_rolling_std_confidence": 0.035,
+        "feat_recent_quality_change": 0.1106,
+        "feat_min_confidence": 0.0611,
+        "feat_min_output_quality": 0.1207
+      }
+    },
+    "20": {
+      "metrics": {},
+      "lead_time": {},
+      "calibration": {},
+      "feature_importances": {}
+    }
+  }
+}

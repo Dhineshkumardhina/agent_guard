@@ -1,0 +1,122 @@
+[
+  {
+    "experiment": "full_temporal_gnn",
+    "temporal": true,
+    "graph": true,
+    "node": true,
+    "edge": true,
+    "memory": true,
+    "interaction_freq": true,
+    "contradiction": true,
+    "confidence": true,
+    "failure_history": true
+  },
+  {
+    "experiment": "no_temporal_info",
+    "temporal": false,
+    "graph": true,
+    "node": true,
+    "edge": true,
+    "memory": true,
+    "interaction_freq": true,
+    "contradiction": true,
+    "confidence": true,
+    "failure_history": true
+  },
+  {
+    "experiment": "no_graph_structure",
+    "temporal": true,
+    "graph": false,
+    "node": true,
+    "edge": true,
+    "memory": true,
+    "interaction_freq": true,
+    "contradiction": true,
+    "confidence": true,
+    "failure_history": true
+  },
+  {
+    "experiment": "no_node_features",
+    "temporal": true,
+    "graph": true,
+    "node": false,
+    "edge": true,
+    "memory": true,
+    "interaction_freq": false,
+    "contradiction": false,
+    "confidence": false,
+    "failure_history": false
+  },
+  {
+    "experiment": "no_edge_features",
+    "temporal": true,
+    "graph": true,
+    "node": true,
+    "edge": false,
+    "memory": true,
+    "interaction_freq": true,
+    "contradiction": true,
+    "confidence": true,
+    "failure_history": true
+  },
+  {
+    "experiment": "no_temporal_memory",
+    "temporal": true,
+    "graph": true,
+    "node": true,
+    "edge": true,
+    "memory": false,
+    "interaction_freq": true,
+    "contradiction": true,
+    "confidence": true,
+    "failure_history": true
+  },
+  {
+    "experiment": "no_interaction_freq",
+    "temporal": true,
+    "graph": true,
+    "node": true,
+    "edge": true,
+    "memory": true,
+    "interaction_freq": false,
+    "contradiction": true,
+    "confidence": true,
+    "failure_history": true
+  },
+  {
+    "experiment": "no_contradiction",
+    "temporal": true,
+    "graph": true,
+    "node": true,
+    "edge": true,
+    "memory": true,
+    "interaction_freq": true,
+    "contradiction": false,
+    "confidence": true,
+    "failure_history": true
+  },
+  {
+    "experiment": "no_confidence",
+    "temporal": true,
+    "graph": true,
+    "node": true,
+    "edge": true,
+    "memory": true,
+    "interaction_freq": true,
+    "contradiction": true,
+    "confidence": false,
+    "failure_history": true
+  },
+  {
+    "experiment": "no_failure_history",
+    "temporal": true,
+    "graph": true,
+    "node": true,
+    "edge": true,
+    "memory": true,
+    "interaction_freq": true,
+    "contradiction": true,
+    "confidence": true,
+    "failure_history": false
+  }
+]

@@ -1,0 +1,33 @@
+================================================================================
+EXPLANATION REPORT: FALSE NEGATIVE
+Sample ID: run_0001_agentguard_generalization_v1_s0_k1 | Run: run_0001_agentguard_generalization_v1 | Horizon K=1
+--------------------------------------------------------------------------------
+Model: TemporalGraphFailurePredictor (v1.0.0) | Seed: 42
+Predicted Risk: 0.5963 (Threshold: 0.10 -> Class: 1)
+Ground Truth: Class 1 (Failure Time: None)
+
+High-Risk Contributing Factors (+):
+  - No strong positive failure indicators detected.
+
+Risk-Mitigating Factors (-):
+  - No active risk-mitigating signals observed.
+
+Key Contributing Agents:
+  - Agent (agent_0): score=0.298
+  - Agent (agent_1): score=0.298
+  - Agent (agent_2): score=0.298
+
+Key Interaction Paths:
+  - None
+
+Key Salient Features:
+  - average_output_quality (node): score=0.119
+  - event_count (node): score=0.000
+  - message_count (node): score=0.000
+  - tool_call_count (node): score=0.000
+
+Relevant Recent Chronological Events (t <= 0.00s):
+  - None
+
+NOTICE: These explanations reflect model-internal associations, gradient attributions, and counterfactual sensitivity measurements. They do NOT establish empirical or physical causality between observed features and multi-agent system failures.
+================================================================================

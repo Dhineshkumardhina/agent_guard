@@ -1,0 +1,92 @@
+[
+  {
+    "Ablation": "Full Temporal GNN",
+    "Removed Component": "None (Reference)",
+    "Seeds Evaluated": 3,
+    "Mean F1": 0.0,
+    "Std F1": 0.0,
+    "Min F1": 0.0,
+    "Max F1": 0.0
+  },
+  {
+    "Ablation": "No Temporal Information",
+    "Removed Component": "Continuous Time Encoding",
+    "Seeds Evaluated": 3,
+    "Mean F1": 0.0,
+    "Std F1": 0.0,
+    "Min F1": 0.0,
+    "Max F1": 0.0
+  },
+  {
+    "Ablation": "No Graph Structure",
+    "Removed Component": "Graph Topology",
+    "Seeds Evaluated": 3,
+    "Mean F1": 0.0,
+    "Std F1": 0.0,
+    "Min F1": 0.0,
+    "Max F1": 0.0
+  },
+  {
+    "Ablation": "No Node Features",
+    "Removed Component": "Node Behavioral Telemetry",
+    "Seeds Evaluated": 3,
+    "Mean F1": 0.0,
+    "Std F1": 0.0,
+    "Min F1": 0.0,
+    "Max F1": 0.0
+  },
+  {
+    "Ablation": "No Edge Features",
+    "Removed Component": "Edge Behavioral Attributes",
+    "Seeds Evaluated": 3,
+    "Mean F1": 0.0,
+    "Std F1": 0.0,
+    "Min F1": 0.0,
+    "Max F1": 0.0
+  },
+  {
+    "Ablation": "No Temporal Memory",
+    "Removed Component": "Persistent Node Memory (m_v)",
+    "Seeds Evaluated": 3,
+    "Mean F1": 0.0,
+    "Std F1": 0.0,
+    "Min F1": 0.0,
+    "Max F1": 0.0
+  },
+  {
+    "Ablation": "No Interaction Frequency",
+    "Removed Component": "Communication Frequency Metrics",
+    "Seeds Evaluated": 3,
+    "Mean F1": 0.0,
+    "Std F1": 0.0,
+    "Min F1": 0.0,
+    "Max F1": 0.0
+  },
+  {
+    "Ablation": "No Contradiction Information",
+    "Removed Component": "Contradiction / Conflict Signals",
+    "Seeds Evaluated": 3,
+    "Mean F1": 0.0,
+    "Std F1": 0.0,
+    "Min F1": 0.0,
+    "Max F1": 0.0
+  },
+  {
+    "Ablation": "No Confidence Information",
+    "Removed Component": "Confidence Telemetry",
+    "Seeds Evaluated": 3,
+    "Mean F1": 0.0,
+    "Std F1": 0.0,
+    "Min F1": 0.0,
+    "Max F1": 0.0
+  },
+  {
+    "Ablation": "No Failure History",
+    "Removed Component": "Recent Failure / Error History",
+    "Seeds Evaluated": 3,
+    "Mean F1": 0.0,
+    "Std F1": 0.0,
+    "Min F1": 0.0,
+    "Max F1": 0.0
+  }
+]

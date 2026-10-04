@@ -6,11 +6,13 @@ from ml.simulation.topologies.base import BaseTopology
 from ml.simulation.topologies.pipeline import PipelineTopology
 from ml.simulation.topologies.star import StarTopology
 from ml.simulation.topologies.mesh import MeshTopology
+from ml.simulation.topologies.custom import CustomTopology
 
 TOPOLOGY_REGISTRY: Dict[str, Type[BaseTopology]] = {
     "pipeline": PipelineTopology,
     "star": StarTopology,
     "mesh": MeshTopology,
+    "custom": CustomTopology,
 }
 
 
