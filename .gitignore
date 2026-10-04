@@ -35,6 +35,7 @@ coverage.xml
 venv/
 ENV/
 env.bak/
+
 venv.bak/
 
 # ─── Secrets & Environment Files (NEVER commit) ──────────────
