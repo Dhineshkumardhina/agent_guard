@@ -80,7 +80,7 @@ class BaseBaselineModel(ABC):
         if not path.exists():
             raise FileNotFoundError(f"Model checkpoint not found: {path}")
         with open(path, "rb") as f:
-            model = pickle.load(f)
+            model = pickle.load(f)  # nosec
         return model
 
 

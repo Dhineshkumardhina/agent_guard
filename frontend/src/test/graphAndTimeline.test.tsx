@@ -1,6 +1,5 @@
-import React from 'react';
-import { describe, it, expect, vi } from 'vitest';
-import { render, screen, fireEvent } from '@testing-library/react';
+import { describe, it, expect } from 'vitest';
+import { render, screen } from '@testing-library/react';
 import GraphViewer from '../components/graphs/GraphViewer';
 import FailureTimeline from '../components/timeline/FailureTimeline';
 import type { RunGraphResponse, EventResponse, RunFailureResponse, PredictionResponse } from '../types';
@@ -33,6 +32,7 @@ describe('Graph and Timeline Visualizations', () => {
           { source: 'agent_0', target: 'agent_1' },
           { source: 'agent_1', target: 'agent_2' },
         ],
+        metadata: {},
       },
     ],
     density: 0.667,

@@ -132,9 +132,9 @@ export interface GraphSnapshotSchema {
 
 export interface RunGraphResponse {
   run_id: string;
-  total_snapshots: number;
-  returned_snapshots: number;
-  timestamps: number[];
+  total_snapshots?: number;
+  returned_snapshots?: number;
+  timestamps?: number[];
   nodes: Array<{
     id: string;
     role?: string;
@@ -161,15 +161,19 @@ export interface RunGraphResponse {
     error_count?: number;
     [key: string]: unknown;
   }>;
-  node_features: Record<string, unknown>;
-  edge_features: Record<string, unknown>;
+  node_features?: Record<string, unknown>;
+  edge_features?: Record<string, unknown>;
   temporal_snapshots: GraphSnapshotSchema[];
-  window: {
+  window?: {
     start_time?: number;
     end_time?: number;
     step_idx?: number;
     snapshot_idx?: number;
   };
+  density?: number;
+  diameter?: number;
+  average_clustering?: number;
+  is_connected?: boolean;
 }
 
 // -------------------------------------------------------------

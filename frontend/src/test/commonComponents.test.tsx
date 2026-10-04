@@ -1,11 +1,10 @@
-import React from 'react';
 import { describe, it, expect, vi } from 'vitest';
 import { render, screen, fireEvent } from '@testing-library/react';
 import Card from '../components/common/Card';
 import MetricCard from '../components/common/MetricCard';
 import DataTable, { type Column } from '../components/common/DataTable';
 import FilterBar, { type FilterField } from '../components/common/FilterBar';
-import { LoadingState, ErrorState, EmptyState } from '../components/common/States';
+import { LoadingState, ErrorState } from '../components/common/States';
 
 describe('Design System Common Components', () => {
   it('renders MetricCard with label, value, and status', () => {

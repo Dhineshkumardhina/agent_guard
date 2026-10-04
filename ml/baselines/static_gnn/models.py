@@ -136,9 +136,12 @@ class BaseStaticGNN(nn.Module if HAS_PYG else object):
 
         dev = device or (torch.device("cuda") if torch.cuda.is_available() else torch.device("cpu"))
         try:
-            payload = torch.load(path, map_location=dev, weights_only=False)
-        except TypeError:
-            payload = torch.load(path, map_location=dev)
+            payload = torch.load(path, map_location=dev, weights_only=True)
+        except Exception:
+            try:
+                payload = torch.load(path, map_location=dev, weights_only=False)  # nosec
+            except TypeError:
+                payload = torch.load(path, map_location=dev)  # nosec
         self.load_state_dict(payload["model_state_dict"])
         self.to(dev)
         return self

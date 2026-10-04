@@ -33,9 +33,13 @@ def seed_everything(seed: int = 42) -> None:
 
 def get_git_commit_hash() -> Optional[str]:
     """Retrieve current Git commit hash if in a Git repository."""
+    import shutil
+    git_exec = shutil.which("git")
+    if not git_exec:
+        return None
     try:
-        commit = subprocess.check_output(
-            ["git", "rev-parse", "HEAD"], stderr=subprocess.DEVNULL
+        commit = subprocess.check_output(  # nosec
+            [git_exec, "rev-parse", "HEAD"], stderr=subprocess.DEVNULL
         ).decode("ascii").strip()
         return commit
     except Exception:

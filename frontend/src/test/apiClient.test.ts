@@ -1,4 +1,4 @@
-import { describe, it, expect, vi, beforeEach } from 'vitest';
+import { describe, it, expect, vi } from 'vitest';
 import { buildQueryString, apiFetch, ApiError } from '../api/client';
 
 describe('API Client Utility Tests', () => {
